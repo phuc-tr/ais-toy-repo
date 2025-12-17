@@ -64,7 +64,7 @@ models:
         classification: public
         quality:
           - type: text
-            description: Must follow format "Uniq-Sess-IDXX".
+            description: Must follow format "Uniq-Sess-ID<id>" where <id> are numerics.
 
       nasporttype:
         type: string
@@ -98,7 +98,7 @@ models:
         classification: public
         quality:
           - type: text
-            description: acctstoptime must be later than acctstarttime.
+            description: acctstoptime must be later than or equal to acctstarttime.
 
       acctinterval:
         type: integer
