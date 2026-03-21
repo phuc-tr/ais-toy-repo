@@ -1,0 +1,74 @@
+{
+  "ticket": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  },
+  "ticket_status": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  },
+  "ticket_type": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  },
+  "ticket_priority": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  },
+  "ticket_followup": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  },
+  "ticket_note": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  },
+  "ticket_note_type": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  },
+  "ticket_transactions": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  }
+}
