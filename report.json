@@ -1,74 +1,50 @@
 {
-  "ticket": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
+  "success": false,
+  "results": [
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "..."
+  ],
+  "suite_name": "radacct_expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": "30",
+    "successful_expectations": "1",
+    "unsuccessful_expectations": "29",
+    "success_percent": "3.3333333333333335"
   },
-  "ticket_status": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": "...",
+    "batch_markers": "...",
+    "active_batch_definition": "..."
   },
-  "ticket_type": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
-  },
-  "ticket_priority": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
-  },
-  "ticket_followup": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
-  },
-  "ticket_note": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
-  },
-  "ticket_note_type": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
-  },
-  "ticket_transactions": {
-    "success": "False",
-    "results": "...",
-    "suite_name": "radacct_expectation_suite",
-    "suite_parameters": "...",
-    "statistics": "...",
-    "meta": "...",
-    "id": "None"
-  }
+  "id": null
 }
