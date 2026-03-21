@@ -1,0 +1,924 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_id",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_id:not_null"
+        },
+        "id": "ab1696b7-4d67-460e-b8f0-9fcd074cb8f4",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='95621d7a3c36e5fb2eff34a581d92a8e', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_customer_id",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_customer_id:not_null"
+        },
+        "id": "523b8326-71e9-4eb6-8c42-bfabd295c879",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='bd229a554f434f01d0382725219e15b4', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_customer_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_customer_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_customer_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_status_id",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_status_id:not_null"
+        },
+        "id": "0e64a5d8-db3b-4cb0-9b39-a2e1bd6b0a9d",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='889e28347f6c979526e939801e9964a7', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_status_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_status_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_status_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "ticket_status_id",
+          "value_set": [],
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_status_id:foreign_key"
+        },
+        "id": "25aba5fa-5079-4461-b03c-4366dcfe8bef",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='cd68d777d298fda296da69fb1619fee3', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_status_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_status_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_status_id\" in BatchData does not exist.",
+          "raised_exception": true
+        },
+        "MetricConfigurationID(metric_name='column_values.in_set.condition', metric_domain_kwargs_id='cd68d777d298fda296da69fb1619fee3', metric_value_kwargs_id='value_set=[]')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_status_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_status_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_status_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_type_id",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_type_id:not_null"
+        },
+        "id": "b80caee6-be28-45ed-893e-5681cd38545d",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='af1d09f4422623d24fc4d02a7d28569c', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_type_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_type_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_type_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "ticket_type_id",
+          "value_set": [],
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_type_id:foreign_key"
+        },
+        "id": "9cfc73bd-e789-48fd-9711-4f01804d017b",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.in_set.condition', metric_domain_kwargs_id='0cdf7b3400b65e1827431647bcd12b03', metric_value_kwargs_id='value_set=[]')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_type_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_type_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_type_id\" in BatchData does not exist.",
+          "raised_exception": true
+        },
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='0cdf7b3400b65e1827431647bcd12b03', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_type_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_type_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_type_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_priority_id",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_priority_id:not_null"
+        },
+        "id": "77bcb7ec-9e06-470b-8956-f9409fe6d389",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='c6ff80b0930575a6bb09ccdf13226fd9', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_priority_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_priority_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_priority_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "ticket_priority_id",
+          "value_set": [],
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_priority_id:foreign_key"
+        },
+        "id": "4fb92930-5c10-47c6-aae9-49e830c6e9f2",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.in_set.condition', metric_domain_kwargs_id='6b71121c46324a542ac86645d4d7b3bd', metric_value_kwargs_id='value_set=[]')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_priority_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_priority_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_priority_id\" in BatchData does not exist.",
+          "raised_exception": true
+        },
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='6b71121c46324a542ac86645d4d7b3bd', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_priority_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_priority_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_priority_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_owner_id",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_owner_id:not_null"
+        },
+        "id": "1b34ae41-3f64-4b88-9344-b3914bb0f692",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='8016a1e48d23fc6df5f925e85dced58b', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_owner_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_owner_id\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_owner_id\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_creationdate",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_creationdate:not_null"
+        },
+        "id": "7751978b-4578-4169-a7e0-8a4d2b7e0d24",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='f6d1d31db1f3423eb7637917658ee8e3', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_creationdate\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_creationdate\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_creationdate\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_creationtime",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_creationtime:not_null"
+        },
+        "id": "12ed3da9-37c1-46c5-b80a-72063d46335b",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='7e8ece8dc4bb7216f45738cd49e91c40', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_creationtime\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_creationtime\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_creationtime\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_value_lengths_to_be_between",
+        "kwargs": {
+          "column": "ticket_note",
+          "min_value": 0,
+          "max_value": 1000,
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_note:max_length_1000"
+        },
+        "id": "ef90f357-fbfb-4cc5-be6f-8ee366a59ad6",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='f528deb59a358b3a137d8f1a0725b28d', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_note\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_note\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_note\" in BatchData does not exist.",
+          "raised_exception": true
+        },
+        "MetricConfigurationID(metric_name='column_values.value_length.map', metric_domain_kwargs_id='f528deb59a358b3a137d8f1a0725b28d', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_function_partial.py\", line 87, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ticket_note\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ticket_note\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"ticket_note\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "ticket_closedate",
+          "row_condition": {
+            "column": {
+              "name": "ticket_status_id"
+            },
+            "operator": "==",
+            "parameter": 2,
+            "type": "comparison"
+          },
+          "condition_parser": "great_expectations",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "closed_ticket_has_close_date"
+        },
+        "id": "eb975480-3860-4594-ba83-f47b3719fe96",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='table.column_types', metric_domain_kwargs_id='a558b8cc959ca542ff6ead6e4152429c', metric_value_kwargs_id='include_nested=True')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/scope.py\", line 231, in resolve\n    return self.resolvers[key]\n           ~~~~~~~~~~~~~~^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/collections/__init__.py\", line 1019, in __getitem__\n    return self.__missing__(key)            # support subclasses that define __missing__\n           ~~~~~~~~~~~~~~~~^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/collections/__init__.py\", line 1011, in __missing__\n    raise KeyError(key)\nKeyError: 'ticket_status_id'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/scope.py\", line 242, in resolve\n    return self.temps[key]\n           ~~~~~~~~~~^^^^^\nKeyError: 'ticket_status_id'\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 60, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/table_metrics/table_column_types.py\", line 40, in _pandas\n    df, _, _ = execution_engine.get_compute_domain(\n               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_domain_kwargs, domain_type=MetricDomainTypes.TABLE\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/pandas_execution_engine.py\", line 693, in get_compute_domain\n    data: pd.DataFrame = self.get_domain_records(domain_kwargs=domain_kwargs)\n                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/pandas_execution_engine.py\", line 601, in get_domain_records\n    data = self._apply_row_condition_filter(data, row_condition, domain_kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/pandas_execution_engine.py\", line 545, in _apply_row_condition_filter\n    return data.query(self.condition_to_filter_clause(row_condition))\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/frame.py\", line 4834, in query\n    res = self.eval(expr, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/frame.py\", line 4960, in eval\n    return _eval(expr, inplace=inplace, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/eval.py\", line 339, in eval\n    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 809, in __init__\n    self.terms = self.parse()\n                 ~~~~~~~~~~^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 828, in parse\n    return self._visitor.visit(self.expr)\n           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 419, in visit_Module\n    return self.visit(expr, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 422, in visit_Expr\n    return self.visit(node.value, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 719, in visit_Compare\n    return self.visit(binop)\n           ~~~~~~~~~~^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 535, in visit_BinOp\n    op, op_class, left, right = self._maybe_transform_eq_ne(node)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 453, in _maybe_transform_eq_ne\n    left = self.visit(node.left, side=\"left\")\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 545, in visit_Name\n    return self.term_type(node.id, self.env, **kwargs)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/ops.py\", line 91, in __init__\n    self._value = self._resolve_name()\n                  ~~~~~~~~~~~~~~~~~~^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/ops.py\", line 115, in _resolve_name\n    res = self.env.resolve(local_name, is_local=is_local)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/scope.py\", line 244, in resolve\n    raise UndefinedVariableError(key, is_local) from err\npandas.errors.UndefinedVariableError: name 'ticket_status_id' is not defined\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: name 'ticket_status_id' is not defined\n",
+          "exception_message": "name 'ticket_status_id' is not defined",
+          "raised_exception": true
+        },
+        "MetricConfigurationID(metric_name='table.row_count', metric_domain_kwargs_id='a558b8cc959ca542ff6ead6e4152429c', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/scope.py\", line 231, in resolve\n    return self.resolvers[key]\n           ~~~~~~~~~~~~~~^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/collections/__init__.py\", line 1019, in __getitem__\n    return self.__missing__(key)            # support subclasses that define __missing__\n           ~~~~~~~~~~~~~~~~^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/collections/__init__.py\", line 1011, in __missing__\n    raise KeyError(key)\nKeyError: 'ticket_status_id'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/scope.py\", line 242, in resolve\n    return self.temps[key]\n           ~~~~~~~~~~^^^^^\nKeyError: 'ticket_status_id'\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 60, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/table_metrics/table_row_count.py\", line 35, in _pandas\n    df, _, _ = execution_engine.get_compute_domain(\n               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        domain_kwargs=metric_domain_kwargs, domain_type=MetricDomainTypes.TABLE\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/pandas_execution_engine.py\", line 693, in get_compute_domain\n    data: pd.DataFrame = self.get_domain_records(domain_kwargs=domain_kwargs)\n                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/pandas_execution_engine.py\", line 601, in get_domain_records\n    data = self._apply_row_condition_filter(data, row_condition, domain_kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/pandas_execution_engine.py\", line 545, in _apply_row_condition_filter\n    return data.query(self.condition_to_filter_clause(row_condition))\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/frame.py\", line 4834, in query\n    res = self.eval(expr, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/frame.py\", line 4960, in eval\n    return _eval(expr, inplace=inplace, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/eval.py\", line 339, in eval\n    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 809, in __init__\n    self.terms = self.parse()\n                 ~~~~~~~~~~^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 828, in parse\n    return self._visitor.visit(self.expr)\n           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 419, in visit_Module\n    return self.visit(expr, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 422, in visit_Expr\n    return self.visit(node.value, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 719, in visit_Compare\n    return self.visit(binop)\n           ~~~~~~~~~~^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 535, in visit_BinOp\n    op, op_class, left, right = self._maybe_transform_eq_ne(node)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 453, in _maybe_transform_eq_ne\n    left = self.visit(node.left, side=\"left\")\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 413, in visit\n    return visitor(node, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/expr.py\", line 545, in visit_Name\n    return self.term_type(node.id, self.env, **kwargs)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/ops.py\", line 91, in __init__\n    self._value = self._resolve_name()\n                  ~~~~~~~~~~~~~~~~~~^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/ops.py\", line 115, in _resolve_name\n    res = self.env.resolve(local_name, is_local=is_local)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/computation/scope.py\", line 244, in resolve\n    raise UndefinedVariableError(key, is_local) from err\npandas.errors.UndefinedVariableError: name 'ticket_status_id' is not defined\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: name 'ticket_status_id' is not defined\n",
+          "exception_message": "name 'ticket_status_id' is not defined",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "note_type",
+          "value_set": [],
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "note_type:foreign_key"
+        },
+        "id": "35da5257-01b0-4ca5-a684-73413c31ff77",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.in_set.condition', metric_domain_kwargs_id='aa7ba036ed142bcda220cc01291bf1ae', metric_value_kwargs_id='value_set=[]')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"note_type\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"note_type\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"note_type\" in BatchData does not exist.",
+          "raised_exception": true
+        },
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='aa7ba036ed142bcda220cc01291bf1ae', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"note_type\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"note_type\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"note_type\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_set": [
+            "ticket_id",
+            "ticket_customer_id",
+            "ticket_status_id",
+            "ticket_type_id",
+            "ticket_description",
+            "ticket_priority_id",
+            "ticket_owner_id",
+            "ticket_assignedto_id",
+            "ticket_creationdate",
+            "ticket_creationtime",
+            "ticket_closed_by_id",
+            "ticket_closedate",
+            "ticket_closetime",
+            "ticket_updated_by_id",
+            "ticket_updated_date",
+            "ticket_note",
+            "ticket_followup_id"
+          ]
+        },
+        "meta": {
+          "check_id": "ticket:columns_match_set"
+        },
+        "id": "aa2dbaf1-d0df-4c5d-9b1f-7257eb183234",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "acctauthentic",
+          "acctinputoctets",
+          "acctinterval",
+          "acctoutputoctets",
+          "acctsessionid",
+          "acctsessiontime",
+          "acctstarttime",
+          "acctstoptime",
+          "acctterminatecause",
+          "acctuniqueid",
+          "acctupdatetime",
+          "calledstationid",
+          "callingstationid",
+          "connectinfo_start",
+          "connectinfo_stop",
+          "created_at",
+          "delegatedipv6prefix",
+          "framedinterfaceid",
+          "framedipv6address",
+          "framedipv6prefix",
+          "framedprotocol",
+          "nasportid",
+          "nasporttype",
+          "radacctid",
+          "realm",
+          "servicetype"
+        ],
+        "details": {
+          "mismatched": {
+            "unexpected": [
+              "acctauthentic",
+              "acctinputoctets",
+              "acctinterval",
+              "acctoutputoctets",
+              "acctsessionid",
+              "acctsessiontime",
+              "acctstarttime",
+              "acctstoptime",
+              "acctterminatecause",
+              "acctuniqueid",
+              "acctupdatetime",
+              "calledstationid",
+              "callingstationid",
+              "connectinfo_start",
+              "connectinfo_stop",
+              "created_at",
+              "delegatedipv6prefix",
+              "framedinterfaceid",
+              "framedipv6address",
+              "framedipv6prefix",
+              "framedprotocol",
+              "nasportid",
+              "nasporttype",
+              "radacctid",
+              "realm",
+              "servicetype"
+            ],
+            "missing": [
+              "ticket_assignedto_id",
+              "ticket_closed_by_id",
+              "ticket_closedate",
+              "ticket_closetime",
+              "ticket_creationdate",
+              "ticket_creationtime",
+              "ticket_customer_id",
+              "ticket_description",
+              "ticket_followup_id",
+              "ticket_id",
+              "ticket_note",
+              "ticket_owner_id",
+              "ticket_priority_id",
+              "ticket_status_id",
+              "ticket_type_id",
+              "ticket_updated_by_id",
+              "ticket_updated_date"
+            ]
+          }
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_id:type"
+        },
+        "id": "fdad7342-5bc6-4591-98b9-4c0273bba726",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_customer_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_customer_id:type"
+        },
+        "id": "eff236a3-4555-46f7-b472-bb7cdc1bcb0b",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_status_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_status_id:type"
+        },
+        "id": "05bd60c6-7bb4-43ad-9816-2bdc1aba0f02",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_type_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_type_id:type"
+        },
+        "id": "6fa3c38e-320e-45e3-be0c-4a016da7ec78",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_priority_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_priority_id:type"
+        },
+        "id": "28604b6a-4226-44bc-96ed-62864f0d78e4",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_owner_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_owner_id:type"
+        },
+        "id": "45648233-68ef-4327-9d9d-91b2efafea77",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_creationdate",
+          "type_": "DATE",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_creationdate:type"
+        },
+        "id": "56dbbbaa-1384-4d80-89e8-b4c454ae4ba3",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_creationtime",
+          "type_": "TIME",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_creationtime:type"
+        },
+        "id": "be0e4812-354f-422b-9b4c-36da65e8d884",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_assignedto_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_assignedto_id:type"
+        },
+        "id": "6241243c-b180-4fa4-9432-12529befb3a8",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_closed_by_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_closed_by_id:type"
+        },
+        "id": "1a24a7c5-fc6b-426b-971b-df22fc9f2429",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_updated_by_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_updated_by_id:type"
+        },
+        "id": "25465d57-b412-4e92-a935-8e5e7dc32208",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_followup_id",
+          "type_": "INTEGER",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_followup_id:type"
+        },
+        "id": "5762de5a-43a5-46c6-bbe7-5627b3744ac5",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_description",
+          "type_": "STRING",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_description:type"
+        },
+        "id": "ca60734d-f0d0-49d4-8a7b-b8a43e2c1937",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_note",
+          "type_": "STRING",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_note:type"
+        },
+        "id": "ebadecd3-bd71-4e39-b3c1-5151612d8a0a",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_closedate",
+          "type_": "DATE",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_closedate:type"
+        },
+        "id": "f4208a20-918c-499e-b427-9a7180245367",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_closetime",
+          "type_": "TIME",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_closetime:type"
+        },
+        "id": "42235177-0516-4fb8-a1b5-e86d6dcc9444",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_updated_date",
+          "type_": "DATETIME",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_updated_date:type"
+        },
+        "id": "111f50ff-b4fc-48d2-b857-9b158f675869",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/core/expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    }
+  ],
+  "suite_name": "expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 32,
+    "successful_expectations": 0,
+    "unsuccessful_expectations": 32,
+    "success_percent": 0.0
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260321T141709.248677Z",
+      "pandas_data_fingerprint": "264990b4a1bff2cbe85a808832aef78b"
+    },
+    "active_batch_definition": {
+      "datasource_name": "my_pandas_datasource",
+      "data_connector_name": "fluent",
+      "data_asset_name": "pd_dataframe_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    }
+  },
+  "id": null
+}
