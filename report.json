@@ -1,0 +1,49 @@
+{
+  "success": false,
+  "results": [
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "...",
+    "..."
+  ],
+  "suite_name": "radacct_expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": "29",
+    "successful_expectations": "2",
+    "unsuccessful_expectations": "27",
+    "success_percent": "6.896551724137931"
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": "...",
+    "batch_markers": "...",
+    "active_batch_definition": "..."
+  },
+  "id": null
+}
