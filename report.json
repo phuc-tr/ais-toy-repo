@@ -1,0 +1,11 @@
+{
+  "radacct": {
+    "success": "False",
+    "results": "...",
+    "suite_name": "radacct_expectation_suite",
+    "suite_parameters": "...",
+    "statistics": "...",
+    "meta": "...",
+    "id": "None"
+  }
+}
