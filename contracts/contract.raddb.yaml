@@ -220,15 +220,8 @@ models:
         description: Delegated IPv6 prefix for downstream clients.
         classification: public
 
-      created_at:
-        type: timestamp
-        physicalType: timestamp
-        required: true
-        description: Record creation timestamp.
-        classification: public
-
 servicelevels:
   freshness:
-      description: The age of the youngest row in a table.
+      description: Data should be no older than 25 hours.
       threshold: 25h
-      timestampField: radacct.created_at
+      timestampField: radacct.acctstarttime

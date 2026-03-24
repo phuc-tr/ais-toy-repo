@@ -29,6 +29,7 @@ df = pd.read_csv(
 
 latest_ts = df["acctstarttime"].max()
 print(f"Latest timestamp in CSV (acctstarttime): {latest_ts}")
+# Latest timestamp in CSV (acctstarttime): 2020-08-17 00:30:00
 
 df = df.replace({float("nan"): None})
 df["acctinterval"] = df["acctinterval"].replace("\\N", 0)
@@ -54,9 +55,9 @@ df.loc[df.sample(frac=NULL_RATE, random_state=SEED + 4).index, "calledstationid"
 df.loc[df.sample(frac=NULL_RATE, random_state=SEED + 5).index, "callingstationid"] = None
 
 # ---------- FRESHNESS DEFECT ----------
-latest = df["acctstarttime"].max()
-df["acctstarttime"] = latest - timedelta(hours=STALE_HOURS)
-
+df["acctstarttime"] = df["acctstarttime"] - timedelta(hours=STALE_HOURS)
+df["acctupdatetime"] = df["acctupdatetime"] - timedelta(hours=STALE_HOURS)
+df["acctstoptime"] = df["acctstoptime"] - timedelta(hours=STALE_HOURS)
 # ---------- LOAD INTO DB ----------
 engine = create_engine(DB_URL)
 
