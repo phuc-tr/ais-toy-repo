@@ -1,0 +1,2081 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_creationdate",
+          "type_": "DATE",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_creationdate:type"
+        },
+        "id": "56dbbbaa-1384-4d80-89e8-b4c454ae4ba3",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.of_type.condition', metric_domain_kwargs_id='db60753f694a5dbd45f72099a9cd3d78', metric_value_kwargs_id='type_=DATE')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 117, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<2 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_of_type.py\", line 45, in _pandas\n    raise ValueError(f\"Unrecognized numpy/python type: {type_}\")  # noqa: TRY003 # FIXME CoP\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unrecognized numpy/python type: DATE\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Unrecognized numpy/python type: DATE\n",
+          "exception_message": "Unrecognized numpy/python type: DATE",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_description",
+          "type_": "STRING",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_description:type"
+        },
+        "id": "ca60734d-f0d0-49d4-8a7b-b8a43e2c1937",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.of_type.condition', metric_domain_kwargs_id='d66b84549651949591dc675a73766770', metric_value_kwargs_id='type_=STRING')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 117, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<2 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_of_type.py\", line 45, in _pandas\n    raise ValueError(f\"Unrecognized numpy/python type: {type_}\")  # noqa: TRY003 # FIXME CoP\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unrecognized numpy/python type: STRING\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Unrecognized numpy/python type: STRING\n",
+          "exception_message": "Unrecognized numpy/python type: STRING",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_note",
+          "type_": "STRING",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_note:type"
+        },
+        "id": "ebadecd3-bd71-4e39-b3c1-5151612d8a0a",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.of_type.condition', metric_domain_kwargs_id='b7c7b3eeb0eb62a57a91b55cd03fda8e', metric_value_kwargs_id='type_=STRING')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 117, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<2 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_of_type.py\", line 45, in _pandas\n    raise ValueError(f\"Unrecognized numpy/python type: {type_}\")  # noqa: TRY003 # FIXME CoP\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unrecognized numpy/python type: STRING\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Unrecognized numpy/python type: STRING\n",
+          "exception_message": "Unrecognized numpy/python type: STRING",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "ticket_closedate",
+          "type_": "DATE",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "ticket_closedate:type"
+        },
+        "id": "f4208a20-918c-499e-b427-9a7180245367",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.of_type.condition', metric_domain_kwargs_id='5f82babd5b76de4c830dc4c4f2c10835', metric_value_kwargs_id='type_=DATE')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 117, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<2 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_of_type.py\", line 45, in _pandas\n    raise ValueError(f\"Unrecognized numpy/python type: {type_}\")  # noqa: TRY003 # FIXME CoP\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unrecognized numpy/python type: DATE\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Unrecognized numpy/python type: DATE\n",
+          "exception_message": "Unrecognized numpy/python type: DATE",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_set": [
+            "ticket_id",
+            "ticket_customer_id",
+            "ticket_status_id",
+            "ticket_type_id",
+            "ticket_description",
+            "ticket_priority_id",
+            "ticket_owner_id",
+            "ticket_assignedto_id",
+            "ticket_creationdate",
+            "ticket_creationtime",
+            "ticket_closed_by_id",
+            "ticket_closedate",
+            "ticket_closetime",
+            "ticket_updated_by_id",
+            "ticket_updated_date",
+            "ticket_note",
+            "ticket_followup_id"
+          ]
+        },
+        "meta": {
+          "check_id": "ticket:columns_match_set"
+        },
+        "id": "aa2dbaf1-d0df-4c5d-9b1f-7257eb183234",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "creation_date",
+          "creationdate",
+          "creationtime",
+          "id",
+          "note_type",
+          "note_type_desc",
+          "ticket_assignedto_id",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_creation_date",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_customer_id",
+          "ticket_description",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "ticket_followup_id",
+          "ticket_id",
+          "ticket_note",
+          "ticket_note_details",
+          "ticket_note_id",
+          "ticket_owner_id",
+          "ticket_priority_id",
+          "ticket_priority_type",
+          "ticket_status_desc",
+          "ticket_status_id",
+          "ticket_status_name",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note",
+          "ticket_trans_summury",
+          "ticket_type_desc",
+          "ticket_type_id",
+          "ticket_type_name",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "user_id",
+          "userid"
+        ],
+        "details": {
+          "mismatched": {
+            "unexpected": [
+              "creation_date",
+              "creationdate",
+              "creationtime",
+              "id",
+              "note_type",
+              "note_type_desc",
+              "ticket_creation_date",
+              "ticket_followup",
+              "ticket_followup_desc",
+              "ticket_note_details",
+              "ticket_note_id",
+              "ticket_priority_type",
+              "ticket_status_desc",
+              "ticket_status_name",
+              "ticket_trans_creation_date",
+              "ticket_trans_creation_time",
+              "ticket_trans_note",
+              "ticket_trans_summury",
+              "ticket_type_desc",
+              "ticket_type_name",
+              "user_id",
+              "userid"
+            ]
+          }
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_id"
+        },
+        "meta": {
+          "check_id": "ticket_id:not_null"
+        },
+        "id": "ab1696b7-4d67-460e-b8f0-9fcd074cb8f4",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 57,
+        "unexpected_percent": 15.966386554621847,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_id:type"
+        },
+        "id": "fdad7342-5bc6-4591-98b9-4c0273bba726",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_customer_id"
+        },
+        "meta": {
+          "check_id": "ticket_customer_id:not_null"
+        },
+        "id": "523b8326-71e9-4eb6-8c42-bfabd295c879",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 257,
+        "unexpected_percent": 71.98879551820728,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_customer_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_customer_id:type"
+        },
+        "id": "eff236a3-4555-46f7-b472-bb7cdc1bcb0b",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_id"
+        },
+        "meta": {
+          "check_id": "ticket_status_id:not_null"
+        },
+        "id": "0e64a5d8-db3b-4cb0-9b39-a2e1bd6b0a9d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 252,
+        "unexpected_percent": 70.58823529411765,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_status_id:type"
+        },
+        "id": "05bd60c6-7bb4-43ad-9816-2bdc1aba0f02",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_id",
+          "value_set": []
+        },
+        "meta": {
+          "check_id": "ticket_status_id:foreign_key"
+        },
+        "id": "25aba5fa-5079-4461-b03c-4366dcfe8bef",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 105,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          1.0,
+          5.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          5.0,
+          5.0,
+          2.0,
+          5.0
+        ],
+        "missing_count": 252,
+        "missing_percent": 70.58823529411765,
+        "unexpected_percent_total": 29.411764705882355,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": 2.0,
+            "count": 9
+          },
+          {
+            "value": 5.0,
+            "count": 9
+          },
+          {
+            "value": 1.0,
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_id"
+        },
+        "meta": {
+          "check_id": "ticket_type_id:not_null"
+        },
+        "id": "b80caee6-be28-45ed-893e-5681cd38545d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 225,
+        "unexpected_percent": 63.02521008403361,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_type_id:type"
+        },
+        "id": "6fa3c38e-320e-45e3-be0c-4a016da7ec78",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_id",
+          "value_set": []
+        },
+        "meta": {
+          "check_id": "ticket_type_id:foreign_key"
+        },
+        "id": "9cfc73bd-e789-48fd-9711-4f01804d017b",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 132,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          29.0,
+          29.0,
+          29.0,
+          29.0,
+          28.0,
+          27.0,
+          27.0,
+          32.0,
+          31.0,
+          32.0,
+          31.0,
+          31.0,
+          31.0,
+          31.0,
+          31.0,
+          31.0,
+          32.0,
+          32.0,
+          31.0,
+          31.0
+        ],
+        "missing_count": 225,
+        "missing_percent": 63.02521008403361,
+        "unexpected_percent_total": 36.97478991596639,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": 31.0,
+            "count": 9
+          },
+          {
+            "value": 29.0,
+            "count": 4
+          },
+          {
+            "value": 32.0,
+            "count": 4
+          },
+          {
+            "value": 27.0,
+            "count": 2
+          },
+          {
+            "value": 28.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_id"
+        },
+        "meta": {
+          "check_id": "ticket_priority_id:not_null"
+        },
+        "id": "77bcb7ec-9e06-470b-8956-f9409fe6d389",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 253,
+        "unexpected_percent": 70.86834733893558,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_priority_id:type"
+        },
+        "id": "28604b6a-4226-44bc-96ed-62864f0d78e4",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_id",
+          "value_set": []
+        },
+        "meta": {
+          "check_id": "ticket_priority_id:foreign_key"
+        },
+        "id": "4fb92930-5c10-47c6-aae9-49e830c6e9f2",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 104,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          3.0,
+          4.0
+        ],
+        "missing_count": 253,
+        "missing_percent": 70.86834733893558,
+        "unexpected_percent_total": 29.13165266106443,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": 3.0,
+            "count": 7
+          },
+          {
+            "value": 1.0,
+            "count": 6
+          },
+          {
+            "value": 2.0,
+            "count": 5
+          },
+          {
+            "value": 0.0,
+            "count": 1
+          },
+          {
+            "value": 4.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_owner_id"
+        },
+        "meta": {
+          "check_id": "ticket_owner_id:not_null"
+        },
+        "id": "1b34ae41-3f64-4b88-9344-b3914bb0f692",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 257,
+        "unexpected_percent": 71.98879551820728,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_owner_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_owner_id:type"
+        },
+        "id": "45648233-68ef-4327-9d9d-91b2efafea77",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationdate"
+        },
+        "meta": {
+          "check_id": "ticket_creationdate:not_null"
+        },
+        "id": "7751978b-4578-4169-a7e0-8a4d2b7e0d24",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 157,
+        "unexpected_percent": 43.977591036414566,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationtime"
+        },
+        "meta": {
+          "check_id": "ticket_creationtime:not_null"
+        },
+        "id": "12ed3da9-37c1-46c5-b80a-72063d46335b",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 257,
+        "unexpected_percent": 71.98879551820728,
+        "partial_unexpected_list": [
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT"
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": "NaT",
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationtime",
+          "type_": "TIME"
+        },
+        "meta": {
+          "check_id": "ticket_creationtime:type"
+        },
+        "id": "be0e4812-354f-422b-9b4c-36da65e8d884",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "timedelta64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_assignedto_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_assignedto_id:type"
+        },
+        "id": "6241243c-b180-4fa4-9432-12529befb3a8",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_closed_by_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_closed_by_id:type"
+        },
+        "id": "1a24a7c5-fc6b-426b-971b-df22fc9f2429",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_updated_by_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_updated_by_id:type"
+        },
+        "id": "25465d57-b412-4e92-a935-8e5e7dc32208",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_followup_id",
+          "type_": "INTEGER"
+        },
+        "meta": {
+          "check_id": "ticket_followup_id:type"
+        },
+        "id": "5762de5a-43a5-46c6-bbe7-5627b3744ac5",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_value_lengths_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_note",
+          "min_value": 0,
+          "max_value": 1000
+        },
+        "meta": {
+          "check_id": "ticket_note:max_length_1000"
+        },
+        "id": "ef90f357-fbfb-4cc5-be6f-8ee366a59ad6",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 257,
+        "missing_percent": 71.98879551820728,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_closedate",
+          "row_condition": {
+            "column": {
+              "name": "ticket_status_id"
+            },
+            "operator": "==",
+            "parameter": 2,
+            "type": "comparison"
+          },
+          "condition_parser": "great_expectations"
+        },
+        "meta": {
+          "check_id": "closed_ticket_has_close_date"
+        },
+        "id": "eb975480-3860-4594-ba83-f47b3719fe96",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 59,
+        "unexpected_count": 1,
+        "unexpected_percent": 1.694915254237288,
+        "partial_unexpected_list": [
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          101
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_closetime",
+          "type_": "TIME"
+        },
+        "meta": {
+          "check_id": "ticket_closetime:type"
+        },
+        "id": "42235177-0516-4fb8-a1b5-e86d6dcc9444",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "timedelta64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_updated_date",
+          "type_": "DATETIME"
+        },
+        "meta": {
+          "check_id": "ticket_updated_date:type"
+        },
+        "id": "111f50ff-b4fc-48d2-b857-9b158f675869",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "datetime64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "note_type",
+          "value_set": []
+        },
+        "meta": {
+          "check_id": "note_type:foreign_key"
+        },
+        "id": "35da5257-01b0-4ca5-a684-73413c31ff77",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 84,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "Visit",
+          "Visit",
+          "Normal",
+          "Visit",
+          "Visit",
+          "Normal",
+          "Visit",
+          "Normal",
+          "Visit",
+          "Normal",
+          "Visit",
+          "Normal",
+          "Normal",
+          "Normal",
+          "Visit",
+          "Normal",
+          "Normal",
+          "Normal",
+          "Normal",
+          "Normal"
+        ],
+        "missing_count": 273,
+        "missing_percent": 76.47058823529412,
+        "unexpected_percent_total": 23.52941176470588,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "Normal",
+            "count": 12
+          },
+          {
+            "value": "Visit",
+            "count": 8
+          }
+        ],
+        "partial_unexpected_index_list": [
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 32,
+    "successful_expectations": 1,
+    "unsuccessful_expectations": 31,
+    "success_percent": 3.125
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260321T140758.570381Z",
+      "pandas_data_fingerprint": "f7b673ef21259f05d87a02684b4def4e"
+    },
+    "active_batch_definition": {
+      "datasource_name": "my_pandas_datasource",
+      "data_connector_name": "fluent",
+      "data_asset_name": "pd_dataframe_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    }
+  },
+  "id": null
+}
