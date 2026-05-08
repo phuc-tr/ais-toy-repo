@@ -1,0 +1,4276 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_pair_values_a_to_be_greater_than_b",
+        "kwargs": {
+          "column_A": "due_date",
+          "column_B": "creationdate",
+          "or_equal": true,
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:custom:due_date"
+        },
+        "id": "ba0a07b7-81b2-4fd7-b69c-7c85c488394d",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_pair_values.a_greater_than_b.condition', metric_domain_kwargs_id='d653025eb0bdfdc987e253867b1d1b74', metric_value_kwargs_id='or_equal=True')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_pair_condition_partial.py\", line 110, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<3 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_pair_map_metrics/column_pair_values_greater.py\", line 36, in _pandas\n    return temp_column_A >= temp_column_B\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/ops/common.py\", line 76, in new_method\n    return method(self, other)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/arraylike.py\", line 60, in __ge__\n    return self._cmp_method(other, operator.ge)\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/series.py\", line 6138, in _cmp_method\n    res_values = ops.comparison_op(lvalues, rvalues, op)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/ops/array_ops.py\", line 344, in comparison_op\n    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/ops/array_ops.py\", line 127, in comp_method_OBJECT_ARRAY\n    result = libops.vec_compare(x.ravel(), y.ravel(), op)\n  File \"pandas/_libs/ops.pyx\", line 173, in pandas._libs.ops.vec_compare\n  File \"pandas/_libs/tslibs/timestamps.pyx\", line 377, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__\nTypeError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.\n",
+          "exception_message": "Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "value",
+          "min_value": 0.0,
+          "max_value": 1.0,
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "tblcampaign:range:value_0_1"
+        },
+        "id": "8a6ade12-a418-4ab5-81a7-69a516bf6aa3",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.between.condition', metric_domain_kwargs_id='67f1a244802a435dce28921e746ee305', metric_value_kwargs_id='abd4ddecee58b0d51fbddfe1db731f65')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 117, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<2 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_between.py\", line 127, in _pandas\n    return temp_column.map(is_between)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/series.py\", line 4719, in map\n    new_values = self._map_values(arg, na_action=na_action)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/base.py\", line 925, in _map_values\n    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/algorithms.py\", line 1743, in map_array\n    return lib.map_infer(values, mapper, convert=convert)\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/lib.pyx\", line 2999, in pandas._libs.lib.map_infer\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_between.py\", line 83, in is_between\n    raise TypeError(  # noqa: TRY003 # FIXME CoP\n        \"Column values, min_value, and max_value must either be None or of the same type.\"  # noqa: E501 # FIXME CoP\n    )\nTypeError: Column values, min_value, and max_value must either be None or of the same type.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Column values, min_value, and max_value must either be None or of the same type.\n",
+          "exception_message": "Column values, min_value, and max_value must either be None or of the same type.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id"
+        },
+        "meta": {
+          "check_id": "billing_history:key:id_unique"
+        },
+        "id": "3893da13-e477-4a62-82c9-c9b9ceac7644",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 532,
+        "unexpected_percent": 80.24132730015083,
+        "partial_unexpected_list": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          40,
+          39,
+          38,
+          37,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "missing_count": 100,
+        "missing_percent": 13.106159895150721,
+        "unexpected_percent_total": 69.72477064220183,
+        "unexpected_percent_nonmissing": 80.24132730015083,
+        "partial_unexpected_counts": [
+          {
+            "value": 1,
+            "count": 1
+          },
+          {
+            "value": 2,
+            "count": 1
+          },
+          {
+            "value": 3,
+            "count": 1
+          },
+          {
+            "value": 4,
+            "count": 1
+          },
+          {
+            "value": 5,
+            "count": 1
+          },
+          {
+            "value": 6,
+            "count": 1
+          },
+          {
+            "value": 7,
+            "count": 1
+          },
+          {
+            "value": 8,
+            "count": 1
+          },
+          {
+            "value": 9,
+            "count": 1
+          },
+          {
+            "value": 16,
+            "count": 1
+          },
+          {
+            "value": 17,
+            "count": 1
+          },
+          {
+            "value": 18,
+            "count": 1
+          },
+          {
+            "value": 19,
+            "count": 1
+          },
+          {
+            "value": 20,
+            "count": 1
+          },
+          {
+            "value": 21,
+            "count": 1
+          },
+          {
+            "value": 22,
+            "count": 1
+          },
+          {
+            "value": 37,
+            "count": 1
+          },
+          {
+            "value": 38,
+            "count": 1
+          },
+          {
+            "value": 39,
+            "count": 1
+          },
+          {
+            "value": 40,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id"
+        },
+        "meta": {
+          "check_id": "billing_history:key:id_not_null"
+        },
+        "id": "a9b4ac5c-1897-4ad8-a571-b2a9c10ac638",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 100,
+        "unexpected_percent": 13.106159895150721,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          544,
+          545,
+          546,
+          547,
+          548,
+          549,
+          550,
+          551,
+          552,
+          553,
+          554,
+          555,
+          556,
+          557,
+          558,
+          559,
+          560,
+          561,
+          562,
+          563
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "paymentmethod",
+          "value_set": [
+            "PrePaid",
+            "PostPaid"
+          ]
+        },
+        "meta": {
+          "check_id": "billing_history:domain:paymentmethod"
+        },
+        "id": "e570f630-d0fd-4463-9359-61bfa5fb4855",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_match_regex",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "phone",
+          "mostly": 0.0,
+          "regex": "^[Xx*]+$"
+        },
+        "meta": {
+          "check_id": "billing_history:pii:phone_masking_check"
+        },
+        "id": "e28e9835-c2a5-4a71-8b2a-f558c7822e6a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planName"
+        },
+        "meta": {
+          "check_id": "billing_plans:business:planName_unique"
+        },
+        "id": "8449a3c1-0781-440a-8310-001d251bebfe",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 681,
+        "missing_percent": 89.25294888597641,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planName"
+        },
+        "meta": {
+          "check_id": "billing_plans:business:planName_not_null"
+        },
+        "id": "0edbc580-feb0-41a3-968a-71e33555c46d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 681,
+        "unexpected_percent": 89.25294888597641,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planActive",
+          "value_set": [
+            "yes",
+            "no"
+          ]
+        },
+        "meta": {
+          "check_id": "billing_plans:domain:planActive"
+        },
+        "id": "3a96eece-2a05-4f7c-9b68-0f586ba2b283",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 683,
+        "missing_percent": 89.51507208387942,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planRecurringBillingSchedule",
+          "value_set": [
+            "Fixed",
+            "Dynamic"
+          ]
+        },
+        "meta": {
+          "check_id": "billing_plans:domain:planRecurringBillingSchedule"
+        },
+        "id": "2c457fc6-52c6-4a03-96fb-beecf9129dea",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 682,
+        "missing_percent": 89.38401048492791,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_match_regex",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "finDate",
+          "regex": "^\\d{4}/\\d{2}$"
+        },
+        "meta": {
+          "check_id": "financial_summary:format:finDate_regex"
+        },
+        "id": "20c028a9-0c23-477d-9d74-d36b81fa4f01",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 739,
+        "missing_percent": 96.85452162516383,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "finDate"
+        },
+        "meta": {
+          "check_id": "financial_summary:unique:finDate"
+        },
+        "id": "d811cf80-3663-4ff8-8018-34da8aae559f",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 739,
+        "missing_percent": 96.85452162516383,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "total",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "financial_summary:range:total_non_negative"
+        },
+        "id": "9cac65a4-84b3-4a45-8be6-29788d00a68d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 639,
+        "missing_percent": 83.74836173001312,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "total"
+        },
+        "meta": {
+          "check_id": "invoice:required:total_not_null"
+        },
+        "id": "c99ee929-f883-4303-a7bf-c757d307ca46",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 639,
+        "unexpected_percent": 83.74836173001312,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "num_trans",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "financial_summary:range:num_trans_non_negative"
+        },
+        "id": "e33286dd-f72c-4f07-9168-0f615e251636",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 739,
+        "missing_percent": 96.85452162516383,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "num_customers",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "financial_summary:range:num_customers_non_negative"
+        },
+        "id": "3555e54a-af3b-4805-9c5c-1297c4316c41",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 739,
+        "missing_percent": 96.85452162516383,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "date"
+        },
+        "meta": {
+          "check_id": "invoice:required:date_not_null"
+        },
+        "id": "df828aa1-b1f7-4afe-9c87-0c4b80d30dd9",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 563,
+        "unexpected_percent": 73.78768020969856,
+        "partial_unexpected_list": [
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT"
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": "NaT",
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "amount"
+        },
+        "meta": {
+          "check_id": "invoice:required:amount_not_null"
+        },
+        "id": "18fe6c5f-ef50-4a12-bbba-e45c473addbc",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 463,
+        "unexpected_percent": 60.68152031454783,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "amount",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "invoice:range:amount_non_negative"
+        },
+        "id": "7ed21127-952b-41a8-a127-c876026c75f2",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 2,
+        "unexpected_percent": 0.6666666666666667,
+        "partial_unexpected_list": [
+          -10,
+          -10
+        ],
+        "missing_count": 463,
+        "missing_percent": 60.68152031454783,
+        "unexpected_percent_total": 0.2621231979030144,
+        "unexpected_percent_nonmissing": 0.6666666666666667,
+        "partial_unexpected_counts": [
+          {
+            "value": -10,
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          420,
+          421
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "tax_amount"
+        },
+        "meta": {
+          "check_id": "invoice:required:tax_amount_not_null"
+        },
+        "id": "ce30cb69-f1e7-41fe-96e0-7f20a3b7a05a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "tax_amount",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "invoice:range:tax_amount_non_negative"
+        },
+        "id": "d86d899f-11e8-4c44-88bb-e834c0ec954d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "statusId"
+        },
+        "meta": {
+          "check_id": "invoice:required:statusId_not_null"
+        },
+        "id": "103703b5-fc37-4a7f-9e19-45dd536c8b56",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "discount"
+        },
+        "meta": {
+          "check_id": "invoice:required:discount_not_null"
+        },
+        "id": "68aa8f7f-cd65-442b-a787-b1fe661f1edc",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "discount",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "invoice:range:discount_non_negative"
+        },
+        "id": "5802aff2-5f37-4ca2-8aba-a1ff788191ad",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_multicolumn_sum_to_equal",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "amount",
+            "tax_amount",
+            "discount"
+          ],
+          "ignore_row_if": "any_value_is_missing",
+          "sum_total": 1.0
+        },
+        "meta": {
+          "check_id": "invoice:custom:total"
+        },
+        "id": "994f7884-161b-46ba-b769-1c1a4bc743de",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 100,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          {
+            "amount": 5.61,
+            "tax_amount": 0.81,
+            "discount": 0.0
+          },
+          {
+            "amount": 1.87,
+            "tax_amount": 0.27,
+            "discount": 0.0
+          },
+          {
+            "amount": 5.61,
+            "tax_amount": 0.81,
+            "discount": 0.0
+          },
+          {
+            "amount": 15.87,
+            "tax_amount": 2.3,
+            "discount": 0.0
+          },
+          {
+            "amount": 14.42,
+            "tax_amount": 2.09,
+            "discount": 0.0
+          },
+          {
+            "amount": 17.19,
+            "tax_amount": 2.49,
+            "discount": 0.0
+          },
+          {
+            "amount": 3.97,
+            "tax_amount": 0.58,
+            "discount": 0.0
+          },
+          {
+            "amount": 5.29,
+            "tax_amount": 0.77,
+            "discount": 0.0
+          },
+          {
+            "amount": 5.29,
+            "tax_amount": 0.77,
+            "discount": 0.0
+          },
+          {
+            "amount": 20.58,
+            "tax_amount": 2.98,
+            "discount": 0.0
+          },
+          {
+            "amount": 22.45,
+            "tax_amount": 3.26,
+            "discount": 0.0
+          },
+          {
+            "amount": 22.45,
+            "tax_amount": 3.26,
+            "discount": 0.0
+          },
+          {
+            "amount": 22.45,
+            "tax_amount": 3.26,
+            "discount": 0.0
+          },
+          {
+            "amount": 22.94,
+            "tax_amount": 3.33,
+            "discount": 0.0
+          },
+          {
+            "amount": 18.71,
+            "tax_amount": 2.71,
+            "discount": 0.0
+          },
+          {
+            "amount": 5.29,
+            "tax_amount": 0.77,
+            "discount": 0.0
+          },
+          {
+            "amount": 11.9,
+            "tax_amount": 1.73,
+            "discount": 0.0
+          },
+          {
+            "amount": 11.9,
+            "tax_amount": 1.73,
+            "discount": 0.0
+          },
+          {
+            "amount": 15.87,
+            "tax_amount": 2.3,
+            "discount": 0.0
+          },
+          {
+            "amount": 20.58,
+            "tax_amount": 2.98,
+            "discount": 0.0
+          }
+        ],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 13.106159895150721,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": [
+              5.29,
+              0.77,
+              0.0
+            ],
+            "count": 3
+          },
+          {
+            "value": [
+              22.45,
+              3.26,
+              0.0
+            ],
+            "count": 3
+          },
+          {
+            "value": [
+              5.61,
+              0.81,
+              0.0
+            ],
+            "count": 2
+          },
+          {
+            "value": [
+              11.9,
+              1.73,
+              0.0
+            ],
+            "count": 2
+          },
+          {
+            "value": [
+              15.87,
+              2.3,
+              0.0
+            ],
+            "count": 2
+          },
+          {
+            "value": [
+              20.58,
+              2.98,
+              0.0
+            ],
+            "count": 2
+          },
+          {
+            "value": [
+              1.87,
+              0.27,
+              0.0
+            ],
+            "count": 1
+          },
+          {
+            "value": [
+              3.97,
+              0.58,
+              0.0
+            ],
+            "count": 1
+          },
+          {
+            "value": [
+              14.42,
+              2.09,
+              0.0
+            ],
+            "count": 1
+          },
+          {
+            "value": [
+              17.19,
+              2.49,
+              0.0
+            ],
+            "count": 1
+          },
+          {
+            "value": [
+              18.71,
+              2.71,
+              0.0
+            ],
+            "count": 1
+          },
+          {
+            "value": [
+              22.94,
+              3.33,
+              0.0
+            ],
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          225
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_pair_values_a_to_be_greater_than_b",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_A": "cend",
+          "column_B": "cstart",
+          "or_equal": true
+        },
+        "meta": {
+          "check_id": "tblcampaign:custom:cend"
+        },
+        "id": "3b5a7af0-3f03-4145-95f0-0a7c473a41f5",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 1,
+        "unexpected_percent": 3.571428571428571,
+        "partial_unexpected_list": [
+          [
+            "2050-11-29",
+            null
+          ]
+        ],
+        "missing_count": 735,
+        "missing_percent": 96.3302752293578,
+        "unexpected_percent_total": 0.1310615989515072,
+        "unexpected_percent_nonmissing": 3.571428571428571,
+        "partial_unexpected_counts": [
+          {
+            "value": [
+              "2050-11-29",
+              null
+            ],
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          519
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "value",
+          "value_set": [
+            "open",
+            "disputed",
+            "draft",
+            "sent",
+            "paid",
+            "partial"
+          ]
+        },
+        "meta": {
+          "check_id": "invoice_status:domain:value"
+        },
+        "id": "0cf45699-85a7-46fb-b500-56e40c6760c3",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 32,
+        "unexpected_percent": 84.21052631578947,
+        "partial_unexpected_list": [
+          "PostPaid",
+          "PrePaid_TOPUP",
+          "PrePaid_CARD",
+          "PostPaid_RollBack",
+          0.25,
+          0.25,
+          0.5,
+          0.75,
+          0.56,
+          0.25,
+          0.25,
+          1.0,
+          0.25,
+          0.25,
+          0.25,
+          0.43,
+          1.0,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "missing_count": 725,
+        "missing_percent": 95.01965923984272,
+        "unexpected_percent_total": 4.193971166448231,
+        "unexpected_percent_nonmissing": 84.21052631578947,
+        "partial_unexpected_index_list": [
+          412,
+          413,
+          414,
+          415,
+          516,
+          517,
+          518,
+          519,
+          520,
+          521,
+          522,
+          523,
+          524,
+          525,
+          526,
+          527,
+          528,
+          529,
+          530,
+          531
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "value"
+        },
+        "meta": {
+          "check_id": "invoice_status:required:value_not_null"
+        },
+        "id": "7478b365-961d-45c0-b356-c982b88cba7f",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 725,
+        "unexpected_percent": 95.01965923984272,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "value",
+          "value_set": [
+            "PostPaid",
+            "PrePaid_TOPUP",
+            "PrePaid_CARD",
+            "PostPaid_RollBack"
+          ]
+        },
+        "meta": {
+          "check_id": "payment_type:domain:value"
+        },
+        "id": "8655e5eb-9324-46dd-abaf-79616c4b3344",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 34,
+        "unexpected_percent": 89.47368421052632,
+        "partial_unexpected_list": [
+          "open",
+          "disputed",
+          "draft",
+          "sent",
+          "paid",
+          "partial",
+          0.25,
+          0.25,
+          0.5,
+          0.75,
+          0.56,
+          0.25,
+          0.25,
+          1.0,
+          0.25,
+          0.25,
+          0.25,
+          0.43,
+          1.0,
+          0.25
+        ],
+        "missing_count": 725,
+        "missing_percent": 95.01965923984272,
+        "unexpected_percent_total": 4.456094364351245,
+        "unexpected_percent_nonmissing": 89.47368421052632,
+        "partial_unexpected_index_list": [
+          306,
+          307,
+          308,
+          309,
+          310,
+          311,
+          516,
+          517,
+          518,
+          519,
+          520,
+          521,
+          522,
+          523,
+          524,
+          525,
+          526,
+          527,
+          528,
+          529
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "notes"
+        },
+        "meta": {
+          "check_id": "invoice_status:required:notes_not_null"
+        },
+        "id": "47727c4c-b589-444d-84df-2a9c407eb516",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 540,
+        "unexpected_percent": 70.7732634338139,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          9,
+          10,
+          11,
+          12,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "invoice_id"
+        },
+        "meta": {
+          "check_id": "payment:required:invoice_id_not_null"
+        },
+        "id": "f558117e-72d3-483d-b941-78ae12d71c9f",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "type_id"
+        },
+        "meta": {
+          "check_id": "payment:required:type_id_not_null"
+        },
+        "id": "faec3376-d362-44bc-a55c-bc65d8708df1",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "balance_before"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:balance_before_not_null"
+        },
+        "id": "e0a8f48f-7b3b-4e6b-b8ce-f7809ed51eeb",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "bounce"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:bounce_not_null"
+        },
+        "id": "9a35e538-5bf3-410c-b131-ea65a1fefba8",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 563,
+        "unexpected_percent": 73.78768020969856,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "bounce",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:range:bounce_non_negative"
+        },
+        "id": "767ed717-e9a9-4003-bed8-b6d2ebedb781",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 563,
+        "missing_percent": 73.78768020969856,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "allowance"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:allowance_not_null"
+        },
+        "id": "1cab454f-a920-4ea9-9771-64967a1ce6a0",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "balance_current"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:balance_current_not_null"
+        },
+        "id": "4a46a91f-b1c7-4164-8d1b-b73d880ff968",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "due_date"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:due_date_not_null"
+        },
+        "id": "04e5faa2-768c-423f-9c7e-f8f973ab15e8",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "userID"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:userID_not_null"
+        },
+        "id": "44a1092c-e37d-446b-b138-24ac4b5a70ab",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "trans_status"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:trans_status_not_null"
+        },
+        "id": "0499980f-5f0b-4f71-b063-b40e33dfde78",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "creationdate"
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:required:creationdate_not_null"
+        },
+        "id": "c8f81942-d30d-4809-976a-61f33c8d7dc2",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 248,
+        "unexpected_percent": 32.50327653997378,
+        "partial_unexpected_list": [
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 15
+          },
+          {
+            "value": "NaT",
+            "count": 5
+          }
+        ],
+        "partial_unexpected_index_list": [
+          168,
+          169,
+          170,
+          179,
+          180,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "type",
+          "value_set": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "meta": {
+          "check_id": "prepaid_transaction:domain:type"
+        },
+        "id": "209a094b-dca4-4bfb-884a-7cd0aa0d5984",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "Name"
+        },
+        "meta": {
+          "check_id": "tblcampaign:business:Name_unique"
+        },
+        "id": "17873414-52dc-4abc-91ff-418ea9679b0c",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 735,
+        "missing_percent": 96.3302752293578,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "Name"
+        },
+        "meta": {
+          "check_id": "tblcampaign:business:Name_not_null"
+        },
+        "id": "04b54a45-d5d8-4f9d-8ef9-f650d86d9f79",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 735,
+        "unexpected_percent": 96.3302752293578,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "cstatus",
+          "value_set": [
+            "Active",
+            "InActive"
+          ]
+        },
+        "meta": {
+          "check_id": "tblcampaign:domain:cstatus"
+        },
+        "id": "c13c3881-7948-4c5e-9bb9-25ee17bc986b",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 735,
+        "missing_percent": 96.3302752293578,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "description"
+        },
+        "meta": {
+          "check_id": "tblcampaign:required:description_not_null"
+        },
+        "id": "a731a140-30cf-4706-9b84-9c81491dd474",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 635,
+        "unexpected_percent": 83.22411533420708,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "period",
+          "min_value": 0.0
+        },
+        "meta": {
+          "check_id": "tblcampaign:range:period_non_negative"
+        },
+        "id": "2dc1a724-1255-4c4d-a504-62d83c198dd9",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 735,
+        "missing_percent": 96.3302752293578,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "gid"
+        },
+        "meta": {
+          "check_id": "tblgeneration:key:gid_unique"
+        },
+        "id": "db8023ab-6d42-4073-882f-5549434f7507",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "gid"
+        },
+        "meta": {
+          "check_id": "tblgeneration:key:gid_not_null"
+        },
+        "id": "9010653f-dd9f-4074-b3dd-94bf2187e220",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_match_regex",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "month",
+          "regex": "^\\d{4}-\\d{2}$"
+        },
+        "meta": {
+          "check_id": "tblgeneration:format:month_regex"
+        },
+        "id": "b01a293b-e438-46d7-bcd5-304722f057b9",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "month"
+        },
+        "meta": {
+          "check_id": "tblgeneration:unique:month"
+        },
+        "id": "a76bbabb-daa6-4df2-9095-1786495eb1ea",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 2,
+        "unexpected_percent": 2.0,
+        "partial_unexpected_list": [
+          "2011-12",
+          "2011-12"
+        ],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.2621231979030144,
+        "unexpected_percent_nonmissing": 2.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2011-12",
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          546,
+          558
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "transtype"
+        },
+        "meta": {
+          "check_id": "tbllinetype:required:transtype_not_null"
+        },
+        "id": "966d30bc-f184-43dc-94c8-58c44dd2fae2",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 745,
+        "unexpected_percent": 97.64089121887287,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "transdate"
+        },
+        "meta": {
+          "check_id": "tbllinetransactions:required:transdate_not_null"
+        },
+        "id": "32107d23-4623-4a67-b93d-06ff5817aecd",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "typeid"
+        },
+        "meta": {
+          "check_id": "tbllinetransactions:referential_integrity:typeid"
+        },
+        "id": "4099e25f-7ad6-4fdc-b802-52c021d4b23d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 54,
+    "successful_expectations": 19,
+    "unsuccessful_expectations": 35,
+    "success_percent": 35.18518518518518
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260508T090929.097186Z",
+      "pandas_data_fingerprint": "860dcc681e0a9f69d002468b7b17a6f8"
+    },
+    "active_batch_definition": {
+      "datasource_name": "my_pandas_datasource",
+      "data_connector_name": "fluent",
+      "data_asset_name": "pd_dataframe_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    }
+  },
+  "id": null
+}
