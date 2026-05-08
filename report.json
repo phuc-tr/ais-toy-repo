@@ -1,0 +1,1421 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_multicolumn_sum_to_equal",
+        "kwargs": {
+          "column_list": [
+            "amount",
+            "tax_amount",
+            "discount"
+          ],
+          "sum_total": {
+            "column": "total"
+          },
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "contract:invoice:total_equals_amount_plus_tax_minus_discount"
+        },
+        "id": "37a5f279-5327-40c9-927c-026f1f45649f",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='multicolumn_sum.equal.condition', metric_domain_kwargs_id='8f42f04c90bb3fa018d253c85e07366d', metric_value_kwargs_id=\"sum_total={'column': 'total'}\")": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/multicolumn_condition_partial.py\", line 110, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<2 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/multicolumn_map_metrics/multicolumn_sum_equal.py\", line 32, in _pandas\n    row_wise_cond = column_list.sum(axis=1, skipna=False) == sum_total\n                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/frame.py\", line 11697, in sum\n    result = super().sum(axis, skipna, numeric_only, min_count, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/generic.py\", line 12571, in sum\n    return self._min_count_stat_function(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        \"sum\", nanops.nansum, axis, skipna, numeric_only, min_count, **kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/generic.py\", line 12554, in _min_count_stat_function\n    return self._reduce(\n           ~~~~~~~~~~~~^\n        func,\n        ^^^^^\n    ...<4 lines>...\n        min_count=min_count,\n        ^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/frame.py\", line 11589, in _reduce\n    res = df._mgr.reduce(blk_func)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/internals/managers.py\", line 1519, in reduce\n    nbs = blk.reduce(func)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/internals/blocks.py\", line 406, in reduce\n    result = func(self.values)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/frame.py\", line 11508, in blk_func\n    return op(values, axis=axis, skipna=skipna, **kwds)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/nanops.py\", line 85, in _f\n    return f(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/nanops.py\", line 404, in new_func\n    result = func(values, axis=axis, skipna=skipna, mask=mask, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/nanops.py\", line 477, in newfunc\n    return func(values, axis=axis, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/nanops.py\", line 646, in nansum\n    the_sum = values.sum(axis, dtype=dtype_sum)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/numpy/_core/_methods.py\", line 51, in _sum\n    return umr_sum(a, axis, dtype, out, keepdims, initial, where)\nTypeError: unsupported operand type(s) for +: 'decimal.Decimal' and 'float'\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: unsupported operand type(s) for +: 'decimal.Decimal' and 'float'\n",
+          "exception_message": "unsupported operand type(s) for +: 'decimal.Decimal' and 'float'",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_pair_values_a_to_be_greater_than_b",
+        "kwargs": {
+          "column_A": "due_date",
+          "column_B": "creationdate",
+          "or_equal": true,
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "contract:prepaid_transaction:due_date_after_creationdate"
+        },
+        "id": "791b7dff-e02f-4527-a129-3c5c530e8ece",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_pair_values.a_greater_than_b.condition', metric_domain_kwargs_id='d653025eb0bdfdc987e253867b1d1b74', metric_value_kwargs_id='or_equal=True')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_pair_condition_partial.py\", line 110, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<3 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_pair_map_metrics/column_pair_values_greater.py\", line 36, in _pandas\n    return temp_column_A >= temp_column_B\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/ops/common.py\", line 76, in new_method\n    return method(self, other)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/arraylike.py\", line 60, in __ge__\n    return self._cmp_method(other, operator.ge)\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/series.py\", line 6138, in _cmp_method\n    res_values = ops.comparison_op(lvalues, rvalues, op)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/ops/array_ops.py\", line 344, in comparison_op\n    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/ops/array_ops.py\", line 127, in comp_method_OBJECT_ARRAY\n    result = libops.vec_compare(x.ravel(), y.ravel(), op)\n  File \"pandas/_libs/ops.pyx\", line 173, in pandas._libs.ops.vec_compare\n  File \"pandas/_libs/tslibs/timestamps.pyx\", line 377, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__\nTypeError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.\n",
+          "exception_message": "Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "creationdate",
+          "min_value": "2026-05-07",
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset"
+        },
+        "meta": {
+          "check_id": "contract:billing_history:creationdate_fresh_within_24h"
+        },
+        "id": "2aaf7738-97e8-4ff0-9a32-4cdb2ec8875c",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.between.condition', metric_domain_kwargs_id='e9ae5ec4f27c117cc1b7cc321e28fc76', metric_value_kwargs_id='19d02de3a865ecee8728e9b04816c0f4')": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/map_metric_provider/column_condition_partial.py\", line 117, in inner_func\n    meets_expectation_series = metric_fn(\n        cls,\n    ...<2 lines>...\n        _metrics=metrics,\n    )\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_between.py\", line 127, in _pandas\n    return temp_column.map(is_between)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/series.py\", line 4719, in map\n    new_values = self._map_values(arg, na_action=na_action)\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/base.py\", line 925, in _map_values\n    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/pandas/core/algorithms.py\", line 1743, in map_array\n    return lib.map_infer(values, mapper, convert=convert)\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/lib.pyx\", line 2999, in pandas._libs.lib.map_infer\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_between.py\", line 122, in is_between\n    return val >= min_value\n           ^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/tslibs/timestamps.pyx\", line 377, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__\nTypeError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/validator/validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/phuc/miniconda3/envs/ais/lib/python3.13/site-packages/great_expectations/execution_engine/execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.\n",
+          "exception_message": "Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "paymentmethod"
+        },
+        "meta": {
+          "check_id": "contract:billing_history:paymentmethod_exists"
+        },
+        "id": "da6d6ad1-024d-4e26-920b-73b41bcc444c",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "paymentmethod",
+          "value_set": [
+            "PrePaid",
+            "PostPaid"
+          ]
+        },
+        "meta": {
+          "check_id": "contract:billing_history:paymentmethod_accepted_values"
+        },
+        "id": "ca749171-0995-4769-96ba-1cc182534386",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planActive"
+        },
+        "meta": {
+          "check_id": "contract:billing_plans:planActive_exists"
+        },
+        "id": "ab126ccb-f188-4a41-bafe-356b2fbe23f4",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planActive",
+          "value_set": [
+            "yes",
+            "no"
+          ]
+        },
+        "meta": {
+          "check_id": "contract:billing_plans:planActive_accepted_values"
+        },
+        "id": "09689ee4-1d13-420d-8f94-49ec1550882c",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 683,
+        "missing_percent": 89.51507208387942,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planRecurringBillingSchedule"
+        },
+        "meta": {
+          "check_id": "contract:billing_plans:planRecurringBillingSchedule_exists"
+        },
+        "id": "a733cadf-e7d4-4d32-bc8f-d983d835b210",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "planRecurringBillingSchedule",
+          "value_set": [
+            "Fixed",
+            "Dynamic"
+          ]
+        },
+        "meta": {
+          "check_id": "contract:billing_plans:planRecurringBillingSchedule_accepted_values"
+        },
+        "id": "0f881037-aa24-46cc-9289-bb9136968599",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 682,
+        "missing_percent": 89.38401048492791,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "finDate"
+        },
+        "meta": {
+          "check_id": "contract:financial_summary:finDate_exists"
+        },
+        "id": "c446020c-daaa-4e4f-b229-b0033c474461",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_match_regex",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "finDate",
+          "regex": "^\\d{4}/\\d{2}$"
+        },
+        "meta": {
+          "check_id": "contract:financial_summary:finDate_regex"
+        },
+        "id": "896b2299-e57c-47b0-961d-61af9104ff93",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 739,
+        "missing_percent": 96.85452162516383,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "finDate"
+        },
+        "meta": {
+          "check_id": "contract:financial_summary:finDate_unique"
+        },
+        "id": "ef31e758-c46d-4b5f-857b-4472d39ad5f2",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 739,
+        "missing_percent": 96.85452162516383,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "total"
+        },
+        "meta": {
+          "check_id": "contract:invoice:total_consistency_exists"
+        },
+        "id": "d926aeb5-e20f-4483-ab4e-74f9adc4cb17",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "amount"
+        },
+        "meta": {
+          "check_id": "contract:invoice:amount_exists"
+        },
+        "id": "e7163df7-b75e-4c76-a9e2-84e6c373f97a",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "amount",
+          "min_value": 0.0,
+          "strict_min": true
+        },
+        "meta": {
+          "check_id": "contract:payment:amount_positive"
+        },
+        "id": "efba63bd-6fef-4965-881a-49be45b8196a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 8,
+        "unexpected_percent": 2.666666666666667,
+        "partial_unexpected_list": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -10,
+          -10
+        ],
+        "missing_count": 463,
+        "missing_percent": 60.68152031454783,
+        "unexpected_percent_total": 1.0484927916120577,
+        "unexpected_percent_nonmissing": 2.666666666666667,
+        "partial_unexpected_counts": [
+          {
+            "value": 0.0,
+            "count": 6
+          },
+          {
+            "value": -10,
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          313,
+          374,
+          399,
+          401,
+          405,
+          410,
+          420,
+          421
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "tax_amount"
+        },
+        "meta": {
+          "check_id": "contract:invoice:tax_amount_exists"
+        },
+        "id": "6576a4bd-463f-4a53-94ea-f1094c1aa238",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "discount"
+        },
+        "meta": {
+          "check_id": "contract:invoice:discount_exists"
+        },
+        "id": "f0f38133-45ba-4bb8-919c-c052020bb60c",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_pair_values_a_to_be_greater_than_b",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_A": "cend",
+          "column_B": "cstart",
+          "or_equal": true
+        },
+        "meta": {
+          "check_id": "contract:tblcampaign:cend_after_cstart"
+        },
+        "id": "5e7f4206-56cb-4730-a4ba-25fd357db750",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 1,
+        "unexpected_percent": 3.571428571428571,
+        "partial_unexpected_list": [
+          [
+            "2050-11-29",
+            null
+          ]
+        ],
+        "missing_count": 735,
+        "missing_percent": 96.3302752293578,
+        "unexpected_percent_total": 0.1310615989515072,
+        "unexpected_percent_nonmissing": 3.571428571428571,
+        "partial_unexpected_counts": [
+          {
+            "value": [
+              "2050-11-29",
+              null
+            ],
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          519
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "value"
+        },
+        "meta": {
+          "check_id": "contract:invoice_status:value_exists"
+        },
+        "id": "a2445a18-a3bd-46ec-94b7-96b6d8bfbaf6",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "value",
+          "value_set": [
+            "open",
+            "disputed",
+            "draft",
+            "sent",
+            "paid",
+            "partial"
+          ]
+        },
+        "meta": {
+          "check_id": "contract:invoice_status:value_accepted_values"
+        },
+        "id": "63438f84-f89f-41c9-b2cb-85e366f44815",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 32,
+        "unexpected_percent": 84.21052631578947,
+        "partial_unexpected_list": [
+          "PostPaid",
+          "PrePaid_TOPUP",
+          "PrePaid_CARD",
+          "PostPaid_RollBack",
+          0.25,
+          0.25,
+          0.5,
+          0.75,
+          0.56,
+          0.25,
+          0.25,
+          1.0,
+          0.25,
+          0.25,
+          0.25,
+          0.43,
+          1.0,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "missing_count": 725,
+        "missing_percent": 95.01965923984272,
+        "unexpected_percent_total": 4.193971166448231,
+        "unexpected_percent_nonmissing": 84.21052631578947,
+        "partial_unexpected_index_list": [
+          412,
+          413,
+          414,
+          415,
+          516,
+          517,
+          518,
+          519,
+          520,
+          521,
+          522,
+          523,
+          524,
+          525,
+          526,
+          527,
+          528,
+          529,
+          530,
+          531
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "value",
+          "value_set": [
+            "PostPaid",
+            "PrePaid_TOPUP",
+            "PrePaid_CARD",
+            "PostPaid_RollBack"
+          ]
+        },
+        "meta": {
+          "check_id": "contract:payment_type:value_accepted_values"
+        },
+        "id": "15fb8aba-6f3e-43a2-838d-8ec078b09595",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 34,
+        "unexpected_percent": 89.47368421052632,
+        "partial_unexpected_list": [
+          "open",
+          "disputed",
+          "draft",
+          "sent",
+          "paid",
+          "partial",
+          0.25,
+          0.25,
+          0.5,
+          0.75,
+          0.56,
+          0.25,
+          0.25,
+          1.0,
+          0.25,
+          0.25,
+          0.25,
+          0.43,
+          1.0,
+          0.25
+        ],
+        "missing_count": 725,
+        "missing_percent": 95.01965923984272,
+        "unexpected_percent_total": 4.456094364351245,
+        "unexpected_percent_nonmissing": 89.47368421052632,
+        "partial_unexpected_index_list": [
+          306,
+          307,
+          308,
+          309,
+          310,
+          311,
+          516,
+          517,
+          518,
+          519,
+          520,
+          521,
+          522,
+          523,
+          524,
+          525,
+          526,
+          527,
+          528,
+          529
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "invoice_id"
+        },
+        "meta": {
+          "check_id": "contract:payment:invoice_id_exists"
+        },
+        "id": "58cdd273-0825-4b99-878e-fce8937882e2",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "invoice_id"
+        },
+        "meta": {
+          "check_id": "contract:payment:invoice_id_not_null"
+        },
+        "id": "f1850799-5959-4002-9151-33e70b1d3183",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "type"
+        },
+        "meta": {
+          "check_id": "contract:prepaid_transaction:type_exists"
+        },
+        "id": "00aee327-c3f0-4177-80df-61d8a344c4cd",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "type",
+          "value_set": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "meta": {
+          "check_id": "contract:prepaid_transaction:type_accepted_values"
+        },
+        "id": "13687255-ccba-4f42-b641-a0d1706b9b67",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "due_date"
+        },
+        "meta": {
+          "check_id": "contract:prepaid_transaction:due_date_exists"
+        },
+        "id": "d84fa41d-22d3-4cf6-967e-924dd102b143",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "creationdate"
+        },
+        "meta": {
+          "check_id": "contract:prepaid_transaction:creationdate_exists"
+        },
+        "id": "7bf73f73-69cf-4956-934e-a4e435437ade",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "cstatus"
+        },
+        "meta": {
+          "check_id": "contract:tblcampaign:cstatus_exists"
+        },
+        "id": "aebcda28-e0c4-43ab-a5c7-4412181cf650",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "cstatus",
+          "value_set": [
+            "Active",
+            "InActive"
+          ]
+        },
+        "meta": {
+          "check_id": "contract:tblcampaign:cstatus_accepted_values"
+        },
+        "id": "2378742f-c0af-49d3-a353-1b2bb8ce9e85",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 735,
+        "missing_percent": 96.3302752293578,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "cstart"
+        },
+        "meta": {
+          "check_id": "contract:tblcampaign:cstart_exists"
+        },
+        "id": "2e6de9f7-1e4d-4578-88f2-fb081a9bad9a",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "cend"
+        },
+        "meta": {
+          "check_id": "contract:tblcampaign:cend_exists"
+        },
+        "id": "21bd664b-584b-4853-8a5d-a1f14afc3ea5",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "month"
+        },
+        "meta": {
+          "check_id": "contract:tblgeneration:month_exists"
+        },
+        "id": "6c67132c-a2bc-4154-8f9f-b12d2ddc6574",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_match_regex",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "month",
+          "regex": "^\\d{4}-\\d{2}$"
+        },
+        "meta": {
+          "check_id": "contract:tblgeneration:month_regex"
+        },
+        "id": "ae488961-6c09-4f76-b582-9580f672090e",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "month"
+        },
+        "meta": {
+          "check_id": "contract:tblgeneration:month_unique"
+        },
+        "id": "4c66fc0c-a04e-411a-af60-a887c25e7ce4",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 2,
+        "unexpected_percent": 2.0,
+        "partial_unexpected_list": [
+          "2011-12",
+          "2011-12"
+        ],
+        "missing_count": 663,
+        "missing_percent": 86.89384010484928,
+        "unexpected_percent_total": 0.2621231979030144,
+        "unexpected_percent_nonmissing": 2.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2011-12",
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          546,
+          558
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "typeid"
+        },
+        "meta": {
+          "check_id": "contract:tbllinetransactions:typeid_exists"
+        },
+        "id": "2bc0eb0d-5f47-4596-aed3-83a988ffc996",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "typeid"
+        },
+        "meta": {
+          "check_id": "contract:tbllinetransactions:typeid_not_null"
+        },
+        "id": "42815ea8-b651-4e6a-bf0a-7b80ddb516d6",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 763,
+        "unexpected_count": 663,
+        "unexpected_percent": 86.89384010484928,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 36,
+    "successful_expectations": 26,
+    "unsuccessful_expectations": 10,
+    "success_percent": 72.22222222222221
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260508T092001.530379Z",
+      "pandas_data_fingerprint": "860dcc681e0a9f69d002468b7b17a6f8"
+    },
+    "active_batch_definition": {
+      "datasource_name": "my_pandas_datasource",
+      "data_connector_name": "fluent",
+      "data_asset_name": "pd_dataframe_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    }
+  },
+  "id": null
+}
