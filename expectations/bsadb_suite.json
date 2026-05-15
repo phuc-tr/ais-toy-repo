@@ -1,0 +1,72 @@
+{
+  "name": "expectation_suite",
+  "expectations": [
+    {
+      "type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ticket_status_id",
+        "type_list": [
+          "INTEGER",
+          "int64"
+        ]
+      },
+      "meta": {
+        "check_id": 1
+      }
+    },
+    {
+      "type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ticket_type_id",
+        "type_list": [
+          "INTEGER",
+          "int64"
+        ]
+      },
+      "meta": {
+        "check_id": 2
+      }
+    },
+    {
+      "type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ticket_priority_id",
+        "type_list": [
+          "INTEGER",
+          "int64"
+        ]
+      },
+      "meta": {
+        "check_id": 3
+      }
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ticket_creationdate"
+      },
+      "meta": {
+        "check_id": 4
+      }
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ticket_creationtime"
+      },
+      "meta": {
+        "check_id": 5
+      }
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ticket_closedate"
+      },
+      "meta": {
+        "check_id": 6
+      }
+    }
+  ],
+  "meta": {}
+}
