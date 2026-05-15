@@ -1,0 +1,24 @@
+{
+  "name": "expectation_suite",
+  "expectations": [
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ticket_creationdate"
+      },
+      "meta": {
+        "check_id": "ticket_creationdate__not_null__contract"
+      }
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ticket_creationtime"
+      },
+      "meta": {
+        "check_id": "ticket_creationtime__not_null__contract"
+      }
+    }
+  ],
+  "meta": {}
+}
