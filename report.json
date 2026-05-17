@@ -1,0 +1,5946 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "ticket_id",
+            "ticket_customer_id",
+            "ticket_status_id",
+            "ticket_type_id",
+            "ticket_description",
+            "ticket_priority_id",
+            "ticket_owner_id",
+            "ticket_assignedto_id",
+            "ticket_creationdate",
+            "ticket_creationtime",
+            "ticket_closed_by_id",
+            "ticket_closedate",
+            "ticket_closetime",
+            "ticket_updated_by_id",
+            "ticket_updated_date",
+            "ticket_note",
+            "ticket_followup_id"
+          ]
+        },
+        "meta": {},
+        "id": "10dfca68-c5a5-4196-880e-fc21ebf47435",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "ticket_status_id",
+            "ticket_status_name",
+            "ticket_status_desc",
+            "creation_date"
+          ]
+        },
+        "meta": {},
+        "id": "527a25c6-a937-4e62-9fb4-539225b85505",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 0,
+              "Expected": "ticket_status_id",
+              "Found": "ticket_id"
+            },
+            {
+              "Expected Column Position": 1,
+              "Expected": "ticket_status_name",
+              "Found": "ticket_customer_id"
+            },
+            {
+              "Expected Column Position": 2,
+              "Expected": "ticket_status_desc",
+              "Found": "ticket_status_id"
+            },
+            {
+              "Expected Column Position": 3,
+              "Expected": "creation_date",
+              "Found": "ticket_type_id"
+            },
+            {
+              "Expected Column Position": 4,
+              "Expected": null,
+              "Found": "ticket_description"
+            },
+            {
+              "Expected Column Position": 5,
+              "Expected": null,
+              "Found": "ticket_priority_id"
+            },
+            {
+              "Expected Column Position": 6,
+              "Expected": null,
+              "Found": "ticket_owner_id"
+            },
+            {
+              "Expected Column Position": 7,
+              "Expected": null,
+              "Found": "ticket_assignedto_id"
+            },
+            {
+              "Expected Column Position": 8,
+              "Expected": null,
+              "Found": "ticket_creationdate"
+            },
+            {
+              "Expected Column Position": 9,
+              "Expected": null,
+              "Found": "ticket_creationtime"
+            },
+            {
+              "Expected Column Position": 10,
+              "Expected": null,
+              "Found": "ticket_closed_by_id"
+            },
+            {
+              "Expected Column Position": 11,
+              "Expected": null,
+              "Found": "ticket_closedate"
+            },
+            {
+              "Expected Column Position": 12,
+              "Expected": null,
+              "Found": "ticket_closetime"
+            },
+            {
+              "Expected Column Position": 13,
+              "Expected": null,
+              "Found": "ticket_updated_by_id"
+            },
+            {
+              "Expected Column Position": 14,
+              "Expected": null,
+              "Found": "ticket_updated_date"
+            },
+            {
+              "Expected Column Position": 15,
+              "Expected": null,
+              "Found": "ticket_note"
+            },
+            {
+              "Expected Column Position": 16,
+              "Expected": null,
+              "Found": "ticket_followup_id"
+            },
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "ticket_type_id",
+            "ticket_type_name",
+            "ticket_type_desc",
+            "creation_date"
+          ]
+        },
+        "meta": {},
+        "id": "cab94774-3302-47a7-9b87-495f94433a72",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 0,
+              "Expected": "ticket_type_id",
+              "Found": "ticket_id"
+            },
+            {
+              "Expected Column Position": 1,
+              "Expected": "ticket_type_name",
+              "Found": "ticket_customer_id"
+            },
+            {
+              "Expected Column Position": 2,
+              "Expected": "ticket_type_desc",
+              "Found": "ticket_status_id"
+            },
+            {
+              "Expected Column Position": 3,
+              "Expected": "creation_date",
+              "Found": "ticket_type_id"
+            },
+            {
+              "Expected Column Position": 4,
+              "Expected": null,
+              "Found": "ticket_description"
+            },
+            {
+              "Expected Column Position": 5,
+              "Expected": null,
+              "Found": "ticket_priority_id"
+            },
+            {
+              "Expected Column Position": 6,
+              "Expected": null,
+              "Found": "ticket_owner_id"
+            },
+            {
+              "Expected Column Position": 7,
+              "Expected": null,
+              "Found": "ticket_assignedto_id"
+            },
+            {
+              "Expected Column Position": 8,
+              "Expected": null,
+              "Found": "ticket_creationdate"
+            },
+            {
+              "Expected Column Position": 9,
+              "Expected": null,
+              "Found": "ticket_creationtime"
+            },
+            {
+              "Expected Column Position": 10,
+              "Expected": null,
+              "Found": "ticket_closed_by_id"
+            },
+            {
+              "Expected Column Position": 11,
+              "Expected": null,
+              "Found": "ticket_closedate"
+            },
+            {
+              "Expected Column Position": 12,
+              "Expected": null,
+              "Found": "ticket_closetime"
+            },
+            {
+              "Expected Column Position": 13,
+              "Expected": null,
+              "Found": "ticket_updated_by_id"
+            },
+            {
+              "Expected Column Position": 14,
+              "Expected": null,
+              "Found": "ticket_updated_date"
+            },
+            {
+              "Expected Column Position": 15,
+              "Expected": null,
+              "Found": "ticket_note"
+            },
+            {
+              "Expected Column Position": 16,
+              "Expected": null,
+              "Found": "ticket_followup_id"
+            },
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "ticket_priority_id",
+            "ticket_priority_type",
+            "ticket_creation_date"
+          ]
+        },
+        "meta": {},
+        "id": "6efaaf5c-5b53-4466-94f2-bb0cef1c867d",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 0,
+              "Expected": "ticket_priority_id",
+              "Found": "ticket_id"
+            },
+            {
+              "Expected Column Position": 1,
+              "Expected": "ticket_priority_type",
+              "Found": "ticket_customer_id"
+            },
+            {
+              "Expected Column Position": 2,
+              "Expected": "ticket_creation_date",
+              "Found": "ticket_status_id"
+            },
+            {
+              "Expected Column Position": 3,
+              "Expected": null,
+              "Found": "ticket_type_id"
+            },
+            {
+              "Expected Column Position": 4,
+              "Expected": null,
+              "Found": "ticket_description"
+            },
+            {
+              "Expected Column Position": 5,
+              "Expected": null,
+              "Found": "ticket_priority_id"
+            },
+            {
+              "Expected Column Position": 6,
+              "Expected": null,
+              "Found": "ticket_owner_id"
+            },
+            {
+              "Expected Column Position": 7,
+              "Expected": null,
+              "Found": "ticket_assignedto_id"
+            },
+            {
+              "Expected Column Position": 8,
+              "Expected": null,
+              "Found": "ticket_creationdate"
+            },
+            {
+              "Expected Column Position": 9,
+              "Expected": null,
+              "Found": "ticket_creationtime"
+            },
+            {
+              "Expected Column Position": 10,
+              "Expected": null,
+              "Found": "ticket_closed_by_id"
+            },
+            {
+              "Expected Column Position": 11,
+              "Expected": null,
+              "Found": "ticket_closedate"
+            },
+            {
+              "Expected Column Position": 12,
+              "Expected": null,
+              "Found": "ticket_closetime"
+            },
+            {
+              "Expected Column Position": 13,
+              "Expected": null,
+              "Found": "ticket_updated_by_id"
+            },
+            {
+              "Expected Column Position": 14,
+              "Expected": null,
+              "Found": "ticket_updated_date"
+            },
+            {
+              "Expected Column Position": 15,
+              "Expected": null,
+              "Found": "ticket_note"
+            },
+            {
+              "Expected Column Position": 16,
+              "Expected": null,
+              "Found": "ticket_followup_id"
+            },
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "id",
+            "ticket_followup",
+            "ticket_followup_desc",
+            "creationdate"
+          ]
+        },
+        "meta": {},
+        "id": "2a767da3-1f18-456d-b718-7e412e95d0eb",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 0,
+              "Expected": "id",
+              "Found": "ticket_id"
+            },
+            {
+              "Expected Column Position": 1,
+              "Expected": "ticket_followup",
+              "Found": "ticket_customer_id"
+            },
+            {
+              "Expected Column Position": 2,
+              "Expected": "ticket_followup_desc",
+              "Found": "ticket_status_id"
+            },
+            {
+              "Expected Column Position": 3,
+              "Expected": "creationdate",
+              "Found": "ticket_type_id"
+            },
+            {
+              "Expected Column Position": 4,
+              "Expected": null,
+              "Found": "ticket_description"
+            },
+            {
+              "Expected Column Position": 5,
+              "Expected": null,
+              "Found": "ticket_priority_id"
+            },
+            {
+              "Expected Column Position": 6,
+              "Expected": null,
+              "Found": "ticket_owner_id"
+            },
+            {
+              "Expected Column Position": 7,
+              "Expected": null,
+              "Found": "ticket_assignedto_id"
+            },
+            {
+              "Expected Column Position": 8,
+              "Expected": null,
+              "Found": "ticket_creationdate"
+            },
+            {
+              "Expected Column Position": 9,
+              "Expected": null,
+              "Found": "ticket_creationtime"
+            },
+            {
+              "Expected Column Position": 10,
+              "Expected": null,
+              "Found": "ticket_closed_by_id"
+            },
+            {
+              "Expected Column Position": 11,
+              "Expected": null,
+              "Found": "ticket_closedate"
+            },
+            {
+              "Expected Column Position": 12,
+              "Expected": null,
+              "Found": "ticket_closetime"
+            },
+            {
+              "Expected Column Position": 13,
+              "Expected": null,
+              "Found": "ticket_updated_by_id"
+            },
+            {
+              "Expected Column Position": 14,
+              "Expected": null,
+              "Found": "ticket_updated_date"
+            },
+            {
+              "Expected Column Position": 15,
+              "Expected": null,
+              "Found": "ticket_note"
+            },
+            {
+              "Expected Column Position": 16,
+              "Expected": null,
+              "Found": "ticket_followup_id"
+            },
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "ticket_note_id",
+            "ticket_note_details",
+            "ticket_creationdate",
+            "creationtime",
+            "ticket_id",
+            "userid",
+            "note_type"
+          ]
+        },
+        "meta": {},
+        "id": "7806757d-1222-4f2e-b7f0-7846ce67dbc2",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 0,
+              "Expected": "ticket_note_id",
+              "Found": "ticket_id"
+            },
+            {
+              "Expected Column Position": 1,
+              "Expected": "ticket_note_details",
+              "Found": "ticket_customer_id"
+            },
+            {
+              "Expected Column Position": 2,
+              "Expected": "ticket_creationdate",
+              "Found": "ticket_status_id"
+            },
+            {
+              "Expected Column Position": 3,
+              "Expected": "creationtime",
+              "Found": "ticket_type_id"
+            },
+            {
+              "Expected Column Position": 4,
+              "Expected": "ticket_id",
+              "Found": "ticket_description"
+            },
+            {
+              "Expected Column Position": 5,
+              "Expected": "userid",
+              "Found": "ticket_priority_id"
+            },
+            {
+              "Expected Column Position": 6,
+              "Expected": "note_type",
+              "Found": "ticket_owner_id"
+            },
+            {
+              "Expected Column Position": 7,
+              "Expected": null,
+              "Found": "ticket_assignedto_id"
+            },
+            {
+              "Expected Column Position": 8,
+              "Expected": null,
+              "Found": "ticket_creationdate"
+            },
+            {
+              "Expected Column Position": 9,
+              "Expected": null,
+              "Found": "ticket_creationtime"
+            },
+            {
+              "Expected Column Position": 10,
+              "Expected": null,
+              "Found": "ticket_closed_by_id"
+            },
+            {
+              "Expected Column Position": 11,
+              "Expected": null,
+              "Found": "ticket_closedate"
+            },
+            {
+              "Expected Column Position": 12,
+              "Expected": null,
+              "Found": "ticket_closetime"
+            },
+            {
+              "Expected Column Position": 13,
+              "Expected": null,
+              "Found": "ticket_updated_by_id"
+            },
+            {
+              "Expected Column Position": 14,
+              "Expected": null,
+              "Found": "ticket_updated_date"
+            },
+            {
+              "Expected Column Position": 15,
+              "Expected": null,
+              "Found": "ticket_note"
+            },
+            {
+              "Expected Column Position": 16,
+              "Expected": null,
+              "Found": "ticket_followup_id"
+            },
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "id",
+            "note_type",
+            "note_type_desc",
+            "creationdate"
+          ]
+        },
+        "meta": {},
+        "id": "ce259218-8834-4e30-9199-1fedcc423979",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 0,
+              "Expected": "id",
+              "Found": "ticket_id"
+            },
+            {
+              "Expected Column Position": 1,
+              "Expected": "note_type",
+              "Found": "ticket_customer_id"
+            },
+            {
+              "Expected Column Position": 2,
+              "Expected": "note_type_desc",
+              "Found": "ticket_status_id"
+            },
+            {
+              "Expected Column Position": 3,
+              "Expected": "creationdate",
+              "Found": "ticket_type_id"
+            },
+            {
+              "Expected Column Position": 4,
+              "Expected": null,
+              "Found": "ticket_description"
+            },
+            {
+              "Expected Column Position": 5,
+              "Expected": null,
+              "Found": "ticket_priority_id"
+            },
+            {
+              "Expected Column Position": 6,
+              "Expected": null,
+              "Found": "ticket_owner_id"
+            },
+            {
+              "Expected Column Position": 7,
+              "Expected": null,
+              "Found": "ticket_assignedto_id"
+            },
+            {
+              "Expected Column Position": 8,
+              "Expected": null,
+              "Found": "ticket_creationdate"
+            },
+            {
+              "Expected Column Position": 9,
+              "Expected": null,
+              "Found": "ticket_creationtime"
+            },
+            {
+              "Expected Column Position": 10,
+              "Expected": null,
+              "Found": "ticket_closed_by_id"
+            },
+            {
+              "Expected Column Position": 11,
+              "Expected": null,
+              "Found": "ticket_closedate"
+            },
+            {
+              "Expected Column Position": 12,
+              "Expected": null,
+              "Found": "ticket_closetime"
+            },
+            {
+              "Expected Column Position": 13,
+              "Expected": null,
+              "Found": "ticket_updated_by_id"
+            },
+            {
+              "Expected Column Position": 14,
+              "Expected": null,
+              "Found": "ticket_updated_date"
+            },
+            {
+              "Expected Column Position": 15,
+              "Expected": null,
+              "Found": "ticket_note"
+            },
+            {
+              "Expected Column Position": 16,
+              "Expected": null,
+              "Found": "ticket_followup_id"
+            },
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column_list": [
+            "id",
+            "ticket_id",
+            "user_id",
+            "ticket_trans_summury",
+            "ticket_trans_creation_date",
+            "ticket_trans_creation_time",
+            "ticket_trans_note"
+          ]
+        },
+        "meta": {},
+        "id": "ced5e74b-5084-4669-87ef-922116d708b6",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": [
+          "ticket_id",
+          "ticket_customer_id",
+          "ticket_status_id",
+          "ticket_type_id",
+          "ticket_description",
+          "ticket_priority_id",
+          "ticket_owner_id",
+          "ticket_assignedto_id",
+          "ticket_creationdate",
+          "ticket_creationtime",
+          "ticket_closed_by_id",
+          "ticket_closedate",
+          "ticket_closetime",
+          "ticket_updated_by_id",
+          "ticket_updated_date",
+          "ticket_note",
+          "ticket_followup_id",
+          "ticket_status_name",
+          "ticket_status_desc",
+          "creation_date",
+          "ticket_type_name",
+          "ticket_type_desc",
+          "ticket_priority_type",
+          "ticket_creation_date",
+          "id",
+          "ticket_followup",
+          "ticket_followup_desc",
+          "creationdate",
+          "ticket_note_id",
+          "ticket_note_details",
+          "creationtime",
+          "userid",
+          "note_type",
+          "note_type_desc",
+          "user_id",
+          "ticket_trans_summury",
+          "ticket_trans_creation_date",
+          "ticket_trans_creation_time",
+          "ticket_trans_note"
+        ],
+        "details": {
+          "mismatched": [
+            {
+              "Expected Column Position": 0,
+              "Expected": "id",
+              "Found": "ticket_id"
+            },
+            {
+              "Expected Column Position": 1,
+              "Expected": "ticket_id",
+              "Found": "ticket_customer_id"
+            },
+            {
+              "Expected Column Position": 2,
+              "Expected": "user_id",
+              "Found": "ticket_status_id"
+            },
+            {
+              "Expected Column Position": 3,
+              "Expected": "ticket_trans_summury",
+              "Found": "ticket_type_id"
+            },
+            {
+              "Expected Column Position": 4,
+              "Expected": "ticket_trans_creation_date",
+              "Found": "ticket_description"
+            },
+            {
+              "Expected Column Position": 5,
+              "Expected": "ticket_trans_creation_time",
+              "Found": "ticket_priority_id"
+            },
+            {
+              "Expected Column Position": 6,
+              "Expected": "ticket_trans_note",
+              "Found": "ticket_owner_id"
+            },
+            {
+              "Expected Column Position": 7,
+              "Expected": null,
+              "Found": "ticket_assignedto_id"
+            },
+            {
+              "Expected Column Position": 8,
+              "Expected": null,
+              "Found": "ticket_creationdate"
+            },
+            {
+              "Expected Column Position": 9,
+              "Expected": null,
+              "Found": "ticket_creationtime"
+            },
+            {
+              "Expected Column Position": 10,
+              "Expected": null,
+              "Found": "ticket_closed_by_id"
+            },
+            {
+              "Expected Column Position": 11,
+              "Expected": null,
+              "Found": "ticket_closedate"
+            },
+            {
+              "Expected Column Position": 12,
+              "Expected": null,
+              "Found": "ticket_closetime"
+            },
+            {
+              "Expected Column Position": 13,
+              "Expected": null,
+              "Found": "ticket_updated_by_id"
+            },
+            {
+              "Expected Column Position": 14,
+              "Expected": null,
+              "Found": "ticket_updated_date"
+            },
+            {
+              "Expected Column Position": 15,
+              "Expected": null,
+              "Found": "ticket_note"
+            },
+            {
+              "Expected Column Position": 16,
+              "Expected": null,
+              "Found": "ticket_followup_id"
+            },
+            {
+              "Expected Column Position": 17,
+              "Expected": null,
+              "Found": "ticket_status_name"
+            },
+            {
+              "Expected Column Position": 18,
+              "Expected": null,
+              "Found": "ticket_status_desc"
+            },
+            {
+              "Expected Column Position": 19,
+              "Expected": null,
+              "Found": "creation_date"
+            },
+            {
+              "Expected Column Position": 20,
+              "Expected": null,
+              "Found": "ticket_type_name"
+            },
+            {
+              "Expected Column Position": 21,
+              "Expected": null,
+              "Found": "ticket_type_desc"
+            },
+            {
+              "Expected Column Position": 22,
+              "Expected": null,
+              "Found": "ticket_priority_type"
+            },
+            {
+              "Expected Column Position": 23,
+              "Expected": null,
+              "Found": "ticket_creation_date"
+            },
+            {
+              "Expected Column Position": 24,
+              "Expected": null,
+              "Found": "id"
+            },
+            {
+              "Expected Column Position": 25,
+              "Expected": null,
+              "Found": "ticket_followup"
+            },
+            {
+              "Expected Column Position": 26,
+              "Expected": null,
+              "Found": "ticket_followup_desc"
+            },
+            {
+              "Expected Column Position": 27,
+              "Expected": null,
+              "Found": "creationdate"
+            },
+            {
+              "Expected Column Position": 28,
+              "Expected": null,
+              "Found": "ticket_note_id"
+            },
+            {
+              "Expected Column Position": 29,
+              "Expected": null,
+              "Found": "ticket_note_details"
+            },
+            {
+              "Expected Column Position": 30,
+              "Expected": null,
+              "Found": "creationtime"
+            },
+            {
+              "Expected Column Position": 31,
+              "Expected": null,
+              "Found": "userid"
+            },
+            {
+              "Expected Column Position": 32,
+              "Expected": null,
+              "Found": "note_type"
+            },
+            {
+              "Expected Column Position": 33,
+              "Expected": null,
+              "Found": "note_type_desc"
+            },
+            {
+              "Expected Column Position": 34,
+              "Expected": null,
+              "Found": "user_id"
+            },
+            {
+              "Expected Column Position": 35,
+              "Expected": null,
+              "Found": "ticket_trans_summury"
+            },
+            {
+              "Expected Column Position": 36,
+              "Expected": null,
+              "Found": "ticket_trans_creation_date"
+            },
+            {
+              "Expected Column Position": 37,
+              "Expected": null,
+              "Found": "ticket_trans_creation_time"
+            },
+            {
+              "Expected Column Position": 38,
+              "Expected": null,
+              "Found": "ticket_trans_note"
+            }
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "8d5751e1-64ec-4cd2-9275-5b90f2c64590",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_id"
+        },
+        "meta": {},
+        "id": "77525fd0-3433-40ce-80e3-c8349c693d7f",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 226,
+        "unexpected_percent": 75.33333333333333,
+        "partial_unexpected_list": [
+          20.0,
+          22.0,
+          24.0,
+          25.0,
+          26.0,
+          27.0,
+          28.0,
+          29.0,
+          30.0,
+          31.0,
+          32.0,
+          33.0,
+          37.0,
+          38.0,
+          39.0,
+          40.0,
+          42.0,
+          46.0,
+          47.0,
+          48.0
+        ],
+        "missing_count": 57,
+        "missing_percent": 15.966386554621847,
+        "unexpected_percent_total": 63.305322128851536,
+        "unexpected_percent_nonmissing": 75.33333333333333,
+        "partial_unexpected_counts": [
+          {
+            "value": 20.0,
+            "count": 1
+          },
+          {
+            "value": 22.0,
+            "count": 1
+          },
+          {
+            "value": 24.0,
+            "count": 1
+          },
+          {
+            "value": 25.0,
+            "count": 1
+          },
+          {
+            "value": 26.0,
+            "count": 1
+          },
+          {
+            "value": 27.0,
+            "count": 1
+          },
+          {
+            "value": 28.0,
+            "count": 1
+          },
+          {
+            "value": 29.0,
+            "count": 1
+          },
+          {
+            "value": 30.0,
+            "count": 1
+          },
+          {
+            "value": 31.0,
+            "count": 1
+          },
+          {
+            "value": 32.0,
+            "count": 1
+          },
+          {
+            "value": 33.0,
+            "count": 1
+          },
+          {
+            "value": 37.0,
+            "count": 1
+          },
+          {
+            "value": 38.0,
+            "count": 1
+          },
+          {
+            "value": 39.0,
+            "count": 1
+          },
+          {
+            "value": 40.0,
+            "count": 1
+          },
+          {
+            "value": 42.0,
+            "count": 1
+          },
+          {
+            "value": 46.0,
+            "count": 1
+          },
+          {
+            "value": 47.0,
+            "count": 1
+          },
+          {
+            "value": 48.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          3,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          21,
+          23,
+          25,
+          26,
+          27
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "1b0c47d5-5a82-47aa-bb99-fb61f1e3976d",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "d1d5ebb9-8326-4a38-9e22-1cca8fcb8996",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_id"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_id"
+        },
+        "id": "4745d7ba-abb3-43c2-8b89-d7e2c6792fcf",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 57,
+        "unexpected_percent": 15.966386554621847,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_customer_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "f455208a-48dc-49ac-92fd-7337e1181eda",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_customer_id"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_customer_id"
+        },
+        "id": "ee011b6e-50ff-489e-8bfe-85668b634183",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 257,
+        "unexpected_percent": 71.98879551820728,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "443b1dc2-6fe0-41cc-ab17-d2769c292c46",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "c6c538b2-6639-4d64-9630-165113c9279e",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_id"
+        },
+        "meta": {},
+        "id": "f3da29ed-1a15-4cef-a497-c53b31bbbf8a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 103,
+        "unexpected_percent": 98.09523809523809,
+        "partial_unexpected_list": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          1.0,
+          5.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          5.0,
+          5.0,
+          2.0,
+          5.0
+        ],
+        "missing_count": 252,
+        "missing_percent": 70.58823529411765,
+        "unexpected_percent_total": 28.851540616246496,
+        "unexpected_percent_nonmissing": 98.09523809523809,
+        "partial_unexpected_counts": [
+          {
+            "value": 2.0,
+            "count": 9
+          },
+          {
+            "value": 5.0,
+            "count": 9
+          },
+          {
+            "value": 1.0,
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_id"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_status_id"
+        },
+        "id": "4fa633f4-1af6-4811-b994-2edc10689c32",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 252,
+        "unexpected_percent": 70.58823529411765,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "2062f317-9ab9-4aec-92ab-59909f3be457",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "d978c8f0-1f4b-4653-916e-9263fe58f06b",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_id"
+        },
+        "meta": {},
+        "id": "ad36117b-2150-461d-b2a5-b71646a627d8",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 112,
+        "unexpected_percent": 84.84848484848484,
+        "partial_unexpected_list": [
+          29.0,
+          29.0,
+          29.0,
+          29.0,
+          27.0,
+          27.0,
+          32.0,
+          31.0,
+          32.0,
+          31.0,
+          31.0,
+          31.0,
+          31.0,
+          31.0,
+          31.0,
+          32.0,
+          32.0,
+          31.0,
+          31.0,
+          31.0
+        ],
+        "missing_count": 225,
+        "missing_percent": 63.02521008403361,
+        "unexpected_percent_total": 31.372549019607842,
+        "unexpected_percent_nonmissing": 84.84848484848484,
+        "partial_unexpected_counts": [
+          {
+            "value": 31.0,
+            "count": 10
+          },
+          {
+            "value": 29.0,
+            "count": 4
+          },
+          {
+            "value": 32.0,
+            "count": 4
+          },
+          {
+            "value": 27.0,
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_id"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_type_id"
+        },
+        "id": "6af8a644-36b6-473c-8b90-3d427e512896",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 225,
+        "unexpected_percent": 63.02521008403361,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_description",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "3d3f902c-6f56-489f-967f-0c41a9506126",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 257,
+        "missing_percent": 71.98879551820728,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "8dc49025-0737-4bb8-a3a1-7d1613a2ca80",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "cae6629a-647b-465d-82a9-13442e4dc56d",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_id"
+        },
+        "meta": {},
+        "id": "f9153b62-14e9-42c4-9af9-04640cdf206e",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 98,
+        "unexpected_percent": 94.23076923076923,
+        "partial_unexpected_list": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          3.0,
+          4.0,
+          4.0
+        ],
+        "missing_count": 253,
+        "missing_percent": 70.86834733893558,
+        "unexpected_percent_total": 27.450980392156865,
+        "unexpected_percent_nonmissing": 94.23076923076923,
+        "partial_unexpected_counts": [
+          {
+            "value": 3.0,
+            "count": 7
+          },
+          {
+            "value": 1.0,
+            "count": 6
+          },
+          {
+            "value": 2.0,
+            "count": 5
+          },
+          {
+            "value": 4.0,
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_id"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_priority_id"
+        },
+        "id": "29c9a1c5-7f4c-4bb4-95f3-210ea346f893",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 253,
+        "unexpected_percent": 70.86834733893558,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_owner_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "03271427-bfa4-4e5b-a3a7-9dcfd8c4a903",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_owner_id"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_owner_id"
+        },
+        "id": "f8ae1e35-562a-42fe-b59d-eb840d775f1a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 257,
+        "unexpected_percent": 71.98879551820728,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_assignedto_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "651b7b37-497c-4fb2-b693-95056d921791",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationdate",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "f1ee8aa9-f71d-46dc-b573-66bb113e0e43",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 200,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-12",
+          "2016-07-12"
+        ],
+        "missing_count": 157,
+        "missing_percent": 43.977591036414566,
+        "unexpected_percent_total": 56.022408963585434,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-07-11",
+            "count": 17
+          },
+          {
+            "value": "2016-07-12",
+            "count": 3
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationdate",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "78cbdfe4-4bd3-400b-8993-84371899c6d6",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 200,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-12",
+          "2016-07-12"
+        ],
+        "missing_count": 157,
+        "missing_percent": 43.977591036414566,
+        "unexpected_percent_total": 56.022408963585434,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-07-11",
+            "count": 17
+          },
+          {
+            "value": "2016-07-12",
+            "count": 3
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationdate"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_creationdate"
+        },
+        "id": "8f505538-b829-49dc-bfe6-918072d834ff",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 157,
+        "unexpected_percent": 43.977591036414566,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationtime",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "36e65e4f-bb8d-480a-b3ab-9fb2031e2c9e",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "timedelta64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creationtime"
+        },
+        "meta": {
+          "check_id": "ticket:not_null:ticket_creationtime"
+        },
+        "id": "327dd4a2-4c63-4b6e-868c-206e5939839a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 257,
+        "unexpected_percent": 71.98879551820728,
+        "partial_unexpected_list": [
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT"
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": "NaT",
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_closed_by_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "a89aeb2a-754f-44a2-ae06-9b44b081a4fd",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_closedate",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "f3752c78-81f1-479a-bfdb-2eb9278c85b1",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 58,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2016-07-11",
+          "2016-07-11",
+          "2019-04-13",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-11",
+          "2019-07-28",
+          "2016-07-12",
+          "2019-04-27",
+          "2016-09-17",
+          "2016-09-17",
+          "2019-07-24",
+          "2018-05-20",
+          "2019-07-28",
+          "2019-08-18",
+          "2019-07-22",
+          "2019-07-19",
+          "2016-10-11",
+          "2019-06-09"
+        ],
+        "missing_count": 299,
+        "missing_percent": 83.75350140056022,
+        "unexpected_percent_total": 16.246498599439775,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-07-11",
+            "count": 5
+          },
+          {
+            "value": "2016-07-12",
+            "count": 2
+          },
+          {
+            "value": "2016-09-17",
+            "count": 2
+          },
+          {
+            "value": "2019-07-28",
+            "count": 2
+          },
+          {
+            "value": "2016-10-11",
+            "count": 1
+          },
+          {
+            "value": "2018-05-20",
+            "count": 1
+          },
+          {
+            "value": "2019-04-13",
+            "count": 1
+          },
+          {
+            "value": "2019-04-27",
+            "count": 1
+          },
+          {
+            "value": "2019-06-09",
+            "count": 1
+          },
+          {
+            "value": "2019-07-19",
+            "count": 1
+          },
+          {
+            "value": "2019-07-22",
+            "count": 1
+          },
+          {
+            "value": "2019-07-24",
+            "count": 1
+          },
+          {
+            "value": "2019-08-18",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          18,
+          21,
+          25,
+          26,
+          28,
+          29,
+          31,
+          34,
+          35,
+          36,
+          40,
+          42
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_closetime",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "1a134df6-73b7-4b57-a32b-af6cc51baa1d",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "timedelta64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_updated_by_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "189564cb-cf75-43a5-bfd1-193688981cba",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_updated_date",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "6063a629-f7d3-4a34-a15d-0504b8113a75",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "datetime64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_updated_date",
+          "min_value": "2026-05-16T05:47:20.895984",
+          "max_value": "2026-05-17T06:47:20.896046"
+        },
+        "meta": {
+          "check_id": "ticket:freshness:ticket.ticket_updated_date"
+        },
+        "id": "08fab969-3b83-402e-80e1-91f2b648c313",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 100,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2019-04-13T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-12T00:00:00",
+          "2016-07-11T00:00:00",
+          "2019-07-28T00:00:00",
+          "2016-07-11T00:00:00",
+          "2016-07-12T00:00:00",
+          "2016-07-12T00:00:00",
+          "2016-07-12T00:00:00"
+        ],
+        "missing_count": 257,
+        "missing_percent": 71.98879551820728,
+        "unexpected_percent_total": 28.011204481792717,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-07-11T00:00:00",
+            "count": 14
+          },
+          {
+            "value": "2016-07-12T00:00:00",
+            "count": 4
+          },
+          {
+            "value": "2019-04-13T00:00:00",
+            "count": 1
+          },
+          {
+            "value": "2019-07-28T00:00:00",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_note",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "5cd28676-ebb1-40de-a8d0-05bda08f3f27",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 257,
+        "missing_percent": 71.98879551820728,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_followup_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "4f2def62-3385-44c2-a3ec-b39e54169ef4",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_name",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "0f3ea16c-5a55-4691-ba27-2b77e6929051",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 352,
+        "missing_percent": 98.59943977591037,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_status_desc",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "ccec990b-70eb-4ccf-964b-5c8f2165c638",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": null,
+        "partial_unexpected_list": [],
+        "missing_count": 357,
+        "missing_percent": 100.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": null,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "creation_date",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "19b3c6d0-497d-4252-8a36-944cd3f4c482",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 32,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2018-03-31",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-12",
+          "2016-07-12",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-10-10",
+          "2016-10-10",
+          "2017-01-21",
+          "2017-05-13",
+          "2017-05-13",
+          "2017-05-14",
+          "2018-03-04",
+          "2018-03-04",
+          "2018-03-04"
+        ],
+        "missing_count": 325,
+        "missing_percent": 91.03641456582633,
+        "unexpected_percent_total": 8.96358543417367,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-09-17",
+            "count": 5
+          },
+          {
+            "value": "2016-07-12",
+            "count": 3
+          },
+          {
+            "value": "2018-03-04",
+            "count": 3
+          },
+          {
+            "value": "2016-07-11",
+            "count": 2
+          },
+          {
+            "value": "2016-10-10",
+            "count": 2
+          },
+          {
+            "value": "2017-05-13",
+            "count": 2
+          },
+          {
+            "value": "2017-01-21",
+            "count": 1
+          },
+          {
+            "value": "2017-05-14",
+            "count": 1
+          },
+          {
+            "value": "2018-03-31",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "creation_date",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "d4cd111d-d94f-474b-a6c0-fa6eb1867886",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 32,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2018-03-31",
+          "2016-07-11",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-12",
+          "2016-07-12",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-10-10",
+          "2016-10-10",
+          "2017-01-21",
+          "2017-05-13",
+          "2017-05-13",
+          "2017-05-14",
+          "2018-03-04",
+          "2018-03-04",
+          "2018-03-04"
+        ],
+        "missing_count": 325,
+        "missing_percent": 91.03641456582633,
+        "unexpected_percent_total": 8.96358543417367,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-09-17",
+            "count": 5
+          },
+          {
+            "value": "2016-07-12",
+            "count": 3
+          },
+          {
+            "value": "2018-03-04",
+            "count": 3
+          },
+          {
+            "value": "2016-07-11",
+            "count": 2
+          },
+          {
+            "value": "2016-10-10",
+            "count": 2
+          },
+          {
+            "value": "2017-05-13",
+            "count": 2
+          },
+          {
+            "value": "2017-01-21",
+            "count": 1
+          },
+          {
+            "value": "2017-05-14",
+            "count": 1
+          },
+          {
+            "value": "2018-03-31",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_name",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "5575d7e4-6bae-4b02-a939-52ea17350ba4",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 325,
+        "missing_percent": 91.03641456582633,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_type_desc",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "38c4c28c-48ba-4684-a424-ab84af30be79",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 325,
+        "missing_percent": 91.03641456582633,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_priority_type",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "de3e4bca-0bc6-4ded-8156-4f9944d6a435",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 353,
+        "missing_percent": 98.8795518207283,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_creation_date",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "e03497b3-2c83-4c47-b137-da98498b4f56",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": null,
+        "partial_unexpected_list": [],
+        "missing_count": 357,
+        "missing_percent": 100.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": null,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "b013e11c-eecb-46ce-9649-aeace1725a6b",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id"
+        },
+        "meta": {},
+        "id": "c13cb8e2-1bec-4572-8ccf-8fb12082fc77",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 26,
+        "unexpected_percent": 22.413793103448278,
+        "partial_unexpected_list": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          11.0,
+          12.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "missing_count": 241,
+        "missing_percent": 67.50700280112045,
+        "unexpected_percent_total": 7.282913165266107,
+        "unexpected_percent_nonmissing": 22.413793103448278,
+        "partial_unexpected_counts": [
+          {
+            "value": 1.0,
+            "count": 3
+          },
+          {
+            "value": 2.0,
+            "count": 3
+          },
+          {
+            "value": 3.0,
+            "count": 3
+          },
+          {
+            "value": 4.0,
+            "count": 3
+          },
+          {
+            "value": 5.0,
+            "count": 2
+          },
+          {
+            "value": 6.0,
+            "count": 1
+          },
+          {
+            "value": 7.0,
+            "count": 1
+          },
+          {
+            "value": 8.0,
+            "count": 1
+          },
+          {
+            "value": 9.0,
+            "count": 1
+          },
+          {
+            "value": 11.0,
+            "count": 1
+          },
+          {
+            "value": 12.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "0e9d5e11-2c50-47a7-986f-882531853a42",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id"
+        },
+        "meta": {},
+        "id": "09225aee-6353-444a-974d-ad933e796f34",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 26,
+        "unexpected_percent": 22.413793103448278,
+        "partial_unexpected_list": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          11.0,
+          12.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "missing_count": 241,
+        "missing_percent": 67.50700280112045,
+        "unexpected_percent_total": 7.282913165266107,
+        "unexpected_percent_nonmissing": 22.413793103448278,
+        "partial_unexpected_counts": [
+          {
+            "value": 1.0,
+            "count": 3
+          },
+          {
+            "value": 2.0,
+            "count": 3
+          },
+          {
+            "value": 3.0,
+            "count": 3
+          },
+          {
+            "value": 4.0,
+            "count": 3
+          },
+          {
+            "value": 5.0,
+            "count": 2
+          },
+          {
+            "value": 6.0,
+            "count": 1
+          },
+          {
+            "value": 7.0,
+            "count": 1
+          },
+          {
+            "value": 8.0,
+            "count": 1
+          },
+          {
+            "value": 9.0,
+            "count": 1
+          },
+          {
+            "value": 11.0,
+            "count": 1
+          },
+          {
+            "value": 12.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "6ef3e90b-168a-45f9-a168-0141b0751690",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "id"
+        },
+        "meta": {},
+        "id": "9bdce517-5c80-4db5-9246-82e021f8eda4",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 26,
+        "unexpected_percent": 22.413793103448278,
+        "partial_unexpected_list": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          11.0,
+          12.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "missing_count": 241,
+        "missing_percent": 67.50700280112045,
+        "unexpected_percent_total": 7.282913165266107,
+        "unexpected_percent_nonmissing": 22.413793103448278,
+        "partial_unexpected_counts": [
+          {
+            "value": 1.0,
+            "count": 3
+          },
+          {
+            "value": 2.0,
+            "count": 3
+          },
+          {
+            "value": 3.0,
+            "count": 3
+          },
+          {
+            "value": 4.0,
+            "count": 3
+          },
+          {
+            "value": 5.0,
+            "count": 2
+          },
+          {
+            "value": 6.0,
+            "count": 1
+          },
+          {
+            "value": 7.0,
+            "count": 1
+          },
+          {
+            "value": 8.0,
+            "count": 1
+          },
+          {
+            "value": 9.0,
+            "count": 1
+          },
+          {
+            "value": 11.0,
+            "count": 1
+          },
+          {
+            "value": 12.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_followup",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "2c1f33ba-ee7a-40ef-9908-0f92ba1b92ef",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 345,
+        "missing_percent": 96.63865546218487,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_followup_desc",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "5d7204be-6203-4b59-b38a-06d7c6b7e505",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 345,
+        "missing_percent": 96.63865546218487,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "creationdate",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "fb367732-d3ff-4092-91bd-31a35bae4b29",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 16,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2018-03-31",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-10-09",
+          "2016-10-09",
+          "2016-10-09",
+          "2017-08-26",
+          "2018-04-12",
+          "2018-11-19",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-10-09"
+        ],
+        "missing_count": 341,
+        "missing_percent": 95.51820728291317,
+        "unexpected_percent_total": 4.481792717086835,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-09-17",
+            "count": 8
+          },
+          {
+            "value": "2016-10-09",
+            "count": 4
+          },
+          {
+            "value": "2017-08-26",
+            "count": 1
+          },
+          {
+            "value": "2018-03-31",
+            "count": 1
+          },
+          {
+            "value": "2018-04-12",
+            "count": 1
+          },
+          {
+            "value": "2018-11-19",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          253,
+          254,
+          255,
+          256
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "creationdate",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "51ab87cb-052c-496a-845f-cba04cfe8c00",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 16,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2018-03-31",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-10-09",
+          "2016-10-09",
+          "2016-10-09",
+          "2017-08-26",
+          "2018-04-12",
+          "2018-11-19",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-09-17",
+          "2016-10-09"
+        ],
+        "missing_count": 341,
+        "missing_percent": 95.51820728291317,
+        "unexpected_percent_total": 4.481792717086835,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-09-17",
+            "count": 8
+          },
+          {
+            "value": "2016-10-09",
+            "count": 4
+          },
+          {
+            "value": "2017-08-26",
+            "count": 1
+          },
+          {
+            "value": "2018-03-31",
+            "count": 1
+          },
+          {
+            "value": "2018-04-12",
+            "count": 1
+          },
+          {
+            "value": "2018-11-19",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          253,
+          254,
+          255,
+          256
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_note_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "52cacc3d-7ee1-4ea8-b81e-03761c1ed75e",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_note_id"
+        },
+        "meta": {},
+        "id": "0fe390d3-b2a8-47b7-8185-95939606e5f4",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 257,
+        "missing_percent": 71.98879551820728,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_note_details",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "8c670471-ec07-44c7-8cc7-d1adb941ee29",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 260,
+        "missing_percent": 72.82913165266106,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "creationtime",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "21b57912-b46a-42d2-9ae7-67a2ffd0e12e",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "timedelta64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "userid",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "469f980c-2ac3-4b96-8eba-9ba20c01886b",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "note_type",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "4bc3ac06-a36b-4955-898a-388b12862eb3",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 273,
+        "missing_percent": 76.47058823529412,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "note_type",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "1cd73563-b38f-4478-a937-4ac4f86e99de",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 273,
+        "missing_percent": 76.47058823529412,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "note_type_desc",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "a0ab118b-baff-43f7-8108-2ac872736df6",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 353,
+        "missing_percent": 98.8795518207283,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "user_id",
+          "type_": "int32"
+        },
+        "meta": {},
+        "id": "61e7d0d2-68bf-4a0f-a2c0-8bf70671768b",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_trans_summury",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "11ad3a78-507e-4d0e-83f8-56c33e7c80dd",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 257,
+        "missing_percent": 71.98879551820728,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_trans_creation_date",
+          "type_": "datetime64[ns]"
+        },
+        "meta": {},
+        "id": "70b536a5-1ffd-4548-b72e-ea5b763358f4",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 100,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "2016-06-11",
+          "2016-06-11",
+          "2016-06-11",
+          "2016-06-11",
+          "2016-06-11",
+          "2016-06-11",
+          "2016-06-11",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09",
+          "2016-07-09"
+        ],
+        "missing_count": 257,
+        "missing_percent": 71.98879551820728,
+        "unexpected_percent_total": 28.011204481792717,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "2016-07-09",
+            "count": 13
+          },
+          {
+            "value": "2016-06-11",
+            "count": 7
+          }
+        ],
+        "partial_unexpected_index_list": [
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_trans_creation_time",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "597747de-dcae-41ab-98b6-1f89e5dd21ad",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "timedelta64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "my_pandas_datasource-pd_dataframe_asset",
+          "column": "ticket_trans_note",
+          "type_": "str"
+        },
+        "meta": {},
+        "id": "8b47b6e3-864c-46fc-a66b-53c65e376048",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 357,
+        "unexpected_count": 0,
+        "unexpected_percent": null,
+        "partial_unexpected_list": [],
+        "missing_count": 357,
+        "missing_percent": 100.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": null,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 75,
+    "successful_expectations": 18,
+    "unsuccessful_expectations": 57,
+    "success_percent": 24.0
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260517T064722.520053Z",
+      "pandas_data_fingerprint": "f7b673ef21259f05d87a02684b4def4e"
+    },
+    "active_batch_definition": {
+      "datasource_name": "my_pandas_datasource",
+      "data_connector_name": "fluent",
+      "data_asset_name": "pd_dataframe_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    }
+  },
+  "id": null
+}
