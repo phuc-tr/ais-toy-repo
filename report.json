@@ -36,7 +36,7 @@
           ]
         },
         "meta": {},
-        "id": "a64171a9-bc87-4c89-9341-f4b7991b8de1",
+        "id": "c1db25cd-86ec-460e-908f-eb4906aae667",
         "severity": "critical"
       },
       "result": {
@@ -98,7 +98,7 @@
         "meta": {
           "check_id": "raddb:range:acctstoptime"
         },
-        "id": "7d387d8f-e267-447e-bc3b-0c8045f74dc7",
+        "id": "570359f8-3015-46ca-a326-5de2adb8c234",
         "severity": "critical"
       },
       "result": {
@@ -130,7 +130,7 @@
           "type_": "int32"
         },
         "meta": {},
-        "id": "7de81414-12b8-4242-bc3c-c17fbf250e38",
+        "id": "7c29a25f-718f-4ce0-93c5-cc390519c36b",
         "severity": "critical"
       },
       "result": {
@@ -152,7 +152,7 @@
           "column": "radacctid"
         },
         "meta": {},
-        "id": "586bc56b-a0db-40f9-b4e5-6f6c422074e6",
+        "id": "3ad4ff74-ec97-494f-bfb9-1c4753685f4c",
         "severity": "critical"
       },
       "result": {
@@ -185,7 +185,7 @@
         "meta": {
           "check_id": "raddb:not_null:radacctid"
         },
-        "id": "3a70887b-bd53-43db-9342-fabce8ed945d",
+        "id": "bf5f24cd-00a0-41a4-9a5b-3c77ab610f38",
         "severity": "critical"
       },
       "result": {
@@ -213,7 +213,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "00a2936a-9f25-4888-b389-ee0bfe9e907c",
+        "id": "ae67d746-b57d-4721-9ccd-0f75f1664772",
         "severity": "critical"
       },
       "result": {
@@ -237,7 +237,7 @@
         "meta": {
           "check_id": "raddb:not_null:acctsessionid"
         },
-        "id": "cc30412d-c2d0-4ea6-8539-c4b0e1ce9693",
+        "id": "0bb6425e-3e77-4a07-977f-5d450bf274c8",
         "severity": "critical"
       },
       "result": {
@@ -265,7 +265,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "7ca5f557-009a-4bdc-b553-5e96a858ac58",
+        "id": "92d0ef12-46b9-4ecc-8159-8c410e7db7f4",
         "severity": "critical"
       },
       "result": {
@@ -287,7 +287,7 @@
           "column": "acctuniqueid"
         },
         "meta": {},
-        "id": "97069b1b-d5c3-455c-948d-194cd553f2a4",
+        "id": "03a875e0-2bd5-41d2-811d-a50448651b17",
         "severity": "critical"
       },
       "result": {
@@ -320,7 +320,7 @@
         "meta": {
           "check_id": "raddb:not_null:acctuniqueid"
         },
-        "id": "09d7a77a-2bbc-4088-846b-d672428a4d5a",
+        "id": "43d056da-1008-40dc-88fa-08a5f6f4b315",
         "severity": "critical"
       },
       "result": {
@@ -348,7 +348,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "a8f020cd-f89b-4d2c-a37b-33e91700a918",
+        "id": "e504794c-1fa9-4476-ac8e-3d277245197a",
         "severity": "critical"
       },
       "result": {
@@ -380,7 +380,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "38c7f464-5a84-471d-b790-0ac420929088",
+        "id": "e1a3e8fe-f56b-4ab9-9fb8-b8668c2f467a",
         "severity": "critical"
       },
       "result": {
@@ -405,7 +405,7 @@
         "meta": {
           "check_id": "raddb:format:nasportid"
         },
-        "id": "5f153b36-dbbb-44a6-8fa2-927796db2727",
+        "id": "6ba9e47f-3dda-41ce-b1b4-560e6d2fb80d",
         "severity": "critical"
       },
       "result": {
@@ -472,7 +472,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "a2f7138c-fea9-4f24-9999-092b96a76c94",
+        "id": "d09d9a47-24dc-417e-89df-c38a4dda63cc",
         "severity": "critical"
       },
       "result": {
@@ -500,7 +500,7 @@
         "meta": {
           "check_id": "raddb:domain:nasporttype"
         },
-        "id": "3ebeb24c-4d96-45ae-85d9-d6d102765b2b",
+        "id": "bb0594ba-9825-4148-9dcd-e38a3f1514dc",
         "severity": "critical"
       },
       "result": {
@@ -553,7 +553,7 @@
           "type_": "datetime64[ns]"
         },
         "meta": {},
-        "id": "06d97277-ee16-4deb-97cf-59efa0272711",
+        "id": "f6d39702-67b1-4d61-8ada-5a1b8ba1bbc6",
         "severity": "critical"
       },
       "result": {
@@ -573,13 +573,13 @@
         "kwargs": {
           "batch_id": "my_pandas_datasource-pd_dataframe_asset",
           "column": "acctstarttime",
-          "min_value": "2026-05-24T11:06:50.311979",
-          "max_value": "2026-05-25T12:06:50.312170"
+          "min_value": "2026-05-24T11:09:06.241534",
+          "max_value": "2026-05-25T12:09:06.241640"
         },
         "meta": {
           "check_id": "raddb:freshness:acctstarttime"
         },
-        "id": "e289652d-3570-4f1e-9a40-b8a8d408db1c",
+        "id": "8b4dad43-23cd-4e78-af66-a60ddea94948",
         "severity": "critical"
       },
       "result": {
@@ -658,7 +658,7 @@
           "type_": "datetime64[ns]"
         },
         "meta": {},
-        "id": "79149199-416a-430a-b1d5-f9397671e5c6",
+        "id": "8503d441-7780-4ccc-977d-265b40228110",
         "severity": "critical"
       },
       "result": {
@@ -681,7 +681,7 @@
           "type_": "datetime64[ns]"
         },
         "meta": {},
-        "id": "afffd3c6-2c8d-49b7-8683-d7b644e6fd0a",
+        "id": "91e0463a-35cc-4efd-a5e9-b95592ac402b",
         "severity": "critical"
       },
       "result": {
@@ -704,7 +704,7 @@
           "type_": "int32"
         },
         "meta": {},
-        "id": "73f2255c-2f1e-4af3-8923-76a2b8621c89",
+        "id": "fd339397-01d3-46df-b160-be5bd1ee5b89",
         "severity": "critical"
       },
       "result": {
@@ -727,7 +727,7 @@
           "type_": "int32"
         },
         "meta": {},
-        "id": "e47bfbc2-1f15-455b-8330-93cb36bd2e51",
+        "id": "78099668-5ab3-414f-a0bc-b67f11599426",
         "severity": "critical"
       },
       "result": {
@@ -762,7 +762,7 @@
         "meta": {
           "check_id": "raddb:range:acctsessiontime"
         },
-        "id": "ae9c0c35-7626-49f6-87c8-2ca428f502fe",
+        "id": "d237fe6e-9a0d-4a69-b10c-ac38635f894a",
         "severity": "critical"
       },
       "result": {
@@ -797,7 +797,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "acc0c143-a568-4d5a-b3c1-61dcf1a96a89",
+        "id": "82002cc4-df6d-4e16-a25d-1958fcd6db4d",
         "severity": "critical"
       },
       "result": {
@@ -820,7 +820,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "2ad6c3f7-cbca-4937-8986-e6ad3fe77dd7",
+        "id": "bbd48fa3-4290-4b5d-944c-02231bfdeb31",
         "severity": "critical"
       },
       "result": {
@@ -843,7 +843,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "2877c16b-2002-4979-af51-94bda2795b3c",
+        "id": "2fd2fdbe-7f81-4aa1-8c1d-bd289fe41928",
         "severity": "critical"
       },
       "result": {
@@ -866,7 +866,7 @@
           "type_": "int32"
         },
         "meta": {},
-        "id": "ef39684f-edd7-4c86-9590-4ce33f08648a",
+        "id": "f0b38338-a7fe-48d5-8df8-52e4f1db8484",
         "severity": "critical"
       },
       "result": {
@@ -889,7 +889,7 @@
           "type_": "int32"
         },
         "meta": {},
-        "id": "10bd41f8-8d2a-4ccf-94c6-1073ee93f526",
+        "id": "19ab77a8-e587-4a9c-8290-30b61523896d",
         "severity": "critical"
       },
       "result": {
@@ -912,7 +912,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "6536b45e-4cf8-4b86-8c44-c7e217466451",
+        "id": "2be6333f-e40a-4121-b141-2539ce949afb",
         "severity": "critical"
       },
       "result": {
@@ -937,7 +937,7 @@
         "meta": {
           "check_id": "raddb:not_null:calledstationid"
         },
-        "id": "6e57d361-12e5-4110-8985-d674b80bf576",
+        "id": "2409ec0b-34d7-4098-9346-d89eb62909e6",
         "severity": "critical"
       },
       "result": {
@@ -1012,7 +1012,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "d95dc5d0-ba5c-4365-926f-10fd4372fecf",
+        "id": "a037c714-06d6-47d5-ab1e-976eeb9ee8ac",
         "severity": "critical"
       },
       "result": {
@@ -1037,7 +1037,7 @@
         "meta": {
           "check_id": "raddb:not_null:callingstationid"
         },
-        "id": "bc2f12d4-743f-43bb-8ca9-53f8ddeae090",
+        "id": "16021911-91aa-4951-900c-b8165656632a",
         "severity": "critical"
       },
       "result": {
@@ -1112,7 +1112,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "a73e6e0f-5ccb-445e-956d-b9d9a97cca59",
+        "id": "b694a73a-ffed-4972-9b28-420a54a5a516",
         "severity": "critical"
       },
       "result": {
@@ -1144,7 +1144,7 @@
         "meta": {
           "check_id": "raddb:domain:acctterminatecause"
         },
-        "id": "11c3cf43-1b30-4fc9-99f6-e309de291af6",
+        "id": "b6dbe654-dc21-41de-adc8-bc38bb40620e",
         "severity": "critical"
       },
       "result": {
@@ -1193,7 +1193,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "b45b0e6f-7379-45e6-aebb-68412c841c2d",
+        "id": "d96cd99c-1b76-416f-abbc-a93e3ff9f55e",
         "severity": "critical"
       },
       "result": {
@@ -1216,7 +1216,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "24364ae3-29f0-4608-b9e0-eaee41c0d162",
+        "id": "6aaaa9ed-3427-4c0d-81e5-c358bbe4645e",
         "severity": "critical"
       },
       "result": {
@@ -1239,7 +1239,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "ec09f803-589e-414c-b2e5-08ee3e3ab2ad",
+        "id": "7d79a7d7-1b95-4005-863d-7ea4a134340a",
         "severity": "critical"
       },
       "result": {
@@ -1271,7 +1271,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "461b8180-71a3-422f-9550-063947051c4a",
+        "id": "cadd0e6b-7f41-4ac5-a0b3-5a72e221a6b6",
         "severity": "critical"
       },
       "result": {
@@ -1303,7 +1303,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "d9ff6204-1d34-495d-9709-ba1eb390e812",
+        "id": "b14f9385-ee02-4bf1-941a-fd9c31533ce1",
         "severity": "critical"
       },
       "result": {
@@ -1335,7 +1335,7 @@
           "type_": "str"
         },
         "meta": {},
-        "id": "c2848897-2965-4c11-a098-3337bb531b37",
+        "id": "3198d953-d877-4cbc-9c85-4e36d5aeac57",
         "severity": "critical"
       },
       "result": {
@@ -1372,7 +1372,7 @@
       "batch_data": "PandasDataFrame"
     },
     "batch_markers": {
-      "ge_load_time": "20260525T120652.047353Z",
+      "ge_load_time": "20260525T120907.697951Z",
       "pandas_data_fingerprint": "264990b4a1bff2cbe85a808832aef78b"
     },
     "active_batch_definition": {
