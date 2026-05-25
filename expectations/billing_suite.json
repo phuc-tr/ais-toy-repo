@@ -1,0 +1,2936 @@
+{
+  "expectations": [
+    {
+      "id": "9608a634-ba43-4d7a-82a7-435124b27394",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "phone",
+          "planId",
+          "billAmount",
+          "billAction",
+          "billPerformer",
+          "billReason",
+          "paymentmethod",
+          "bounce",
+          "notes",
+          "creationdate",
+          "creationby",
+          "updatedate",
+          "updateby"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "b09e9779-cafe-49b5-95f0-232327e25af9",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "28b940b8-2d24-424f-a1c3-d23e62123127",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "18403400-7c32-422b-8996-a616d6739a6d",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "9ef9c05e-0d5b-4aaa-b298-5f0793d43e87",
+      "kwargs": {
+        "column": "phone",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "07d9fc6f-0877-4090-b703-c3c091ebdb1a",
+      "kwargs": {
+        "column": "phone",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "81f04a7a-2b9c-42df-bf02-6f4b49090761",
+      "kwargs": {
+        "column": "planId",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "aac3b988-1399-4a43-bc32-265554a7652c",
+      "kwargs": {
+        "column": "billAmount",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "6ae9285c-d3ee-4bdd-963f-66d62ae38e2e",
+      "kwargs": {
+        "column": "billAmount",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "e77799da-62f3-43d6-9b93-a12a870638ce",
+      "kwargs": {
+        "column": "billAction",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "5d3c8221-e0c0-4247-81cb-334f25599115",
+      "kwargs": {
+        "column": "billAction",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "40eddc96-150c-4671-bb4b-c0d00272c40d",
+      "kwargs": {
+        "column": "billPerformer",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "e53d9c39-5675-4721-a674-f08fbbb0487a",
+      "kwargs": {
+        "column": "billPerformer",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "479dc034-704a-4bc1-86f5-a9ad43edfdd3",
+      "kwargs": {
+        "column": "billReason",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "151c32e2-da15-4538-9a5e-6992b44968b8",
+      "kwargs": {
+        "column": "billReason",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "888830a0-9e13-4d77-9bb4-7a5ca5b52b1f",
+      "kwargs": {
+        "column": "paymentmethod",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "c2e9b372-2197-432f-bbe5-570098cc9881",
+      "kwargs": {
+        "column": "paymentmethod",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "c8993c25-71e5-4c2b-a2a5-94229b29b2ee",
+      "kwargs": {
+        "column": "bounce",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "2d4746c1-5152-4928-a390-e2dc0cd4d01f",
+      "kwargs": {
+        "column": "notes",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ac8a1d98-2891-4335-8c64-f70c3bc33df2",
+      "kwargs": {
+        "column": "notes",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "3271163e-a2ef-4e8c-bffc-25986dc9d529",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "cb0d03c7-79f0-449f-b182-469ce0748996",
+      "kwargs": {
+        "column": "creationby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "1e11f0a2-58bd-42c9-8d1d-5f647a706f04",
+      "kwargs": {
+        "column": "creationby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "ec315618-5fe4-4508-a1fe-fe800203c7b4",
+      "kwargs": {
+        "column": "updatedate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "106f02ff-8d06-4526-b5b8-8d8701d1abf5",
+      "kwargs": {
+        "column": "updateby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "441b8226-74c8-43e5-8814-da72f4f5776b",
+      "kwargs": {
+        "column": "updateby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "da98a8b5-2ad1-4c81-a09e-2c14604f8670",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "planName",
+          "sharing",
+          "planType",
+          "planBandwidthUp",
+          "planBandwidthDown",
+          "planTrafficTotal",
+          "planTrafficUp",
+          "planTrafficDown",
+          "planTrafficRefillCost",
+          "planRecurring",
+          "planRecurringPeriod",
+          "planRecurringBillingSchedule",
+          "planCost",
+          "planSetupCost",
+          "planTax",
+          "planCurrency",
+          "planActive",
+          "notes",
+          "creationdate",
+          "creationby",
+          "updatedate",
+          "updateby"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "ab17e5cf-014b-4bf2-937f-758e6985e302",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "3a03bd73-f9a8-45d8-808a-64f50aee28b5",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "fe5b6ee6-0a9c-4d93-a26e-7f8587a49c84",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "6367b9b6-2f23-4425-8507-a9348be2516f",
+      "kwargs": {
+        "column": "planName",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "f8245f2b-b607-48a8-b6db-21698bc451aa",
+      "kwargs": {
+        "column": "planName"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "c0b96e4d-e81b-48f8-8d8d-9a2abcef77f5",
+      "kwargs": {
+        "column": "planName",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "c8b7965e-387f-45e5-b655-9f07e46c6e59",
+      "kwargs": {
+        "column": "sharing",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ca157a88-1e0a-4dc1-9772-58acf8daf874",
+      "kwargs": {
+        "column": "planType",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "f1385296-e852-42aa-aa15-70f4424a9832",
+      "kwargs": {
+        "column": "planType",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "375bbe2a-a054-4455-ba83-e03ae92719c2",
+      "kwargs": {
+        "column": "planBandwidthUp",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "f67ae29b-3ec6-4dcf-9feb-2ee10978e6b5",
+      "kwargs": {
+        "column": "planBandwidthUp",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "e2eb3ade-d006-4063-8e9a-4e8ca007f237",
+      "kwargs": {
+        "column": "planBandwidthDown",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "2ea802f7-586f-4df8-92a3-1ed289d86db4",
+      "kwargs": {
+        "column": "planBandwidthDown",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "f1013c6f-abac-4833-a5f2-5ba6effd7058",
+      "kwargs": {
+        "column": "planTrafficTotal",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "67cde75b-e856-4353-b012-d18ed34fbf4a",
+      "kwargs": {
+        "column": "planTrafficTotal",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "39bffed9-d57e-45a6-b5bf-20967c4008ca",
+      "kwargs": {
+        "column": "planTrafficUp",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "54a97d29-57e2-4fdd-81c2-74a3a20a9341",
+      "kwargs": {
+        "column": "planTrafficUp",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "33b2f549-2010-4e89-b97d-929c037d8309",
+      "kwargs": {
+        "column": "planTrafficDown",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "7a7d1ca1-4066-42c2-ba5a-e0d0afd8024c",
+      "kwargs": {
+        "column": "planTrafficDown",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "e08ebd5c-0f8b-42ad-93c3-0f790b72ba16",
+      "kwargs": {
+        "column": "planTrafficRefillCost",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "b19acf01-8ab9-4bf8-a456-4bf8aa6b4480",
+      "kwargs": {
+        "column": "planTrafficRefillCost",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "c8f722b9-680e-4f0a-a85a-8a4afe6f9a1e",
+      "kwargs": {
+        "column": "planRecurring",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "7983856d-522a-4739-8325-f55264e3e2a0",
+      "kwargs": {
+        "column": "planRecurring",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "f6563393-335d-4f9d-ab67-86e4f14cdc39",
+      "kwargs": {
+        "column": "planRecurringPeriod",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "34c30192-90b9-47b5-bca7-ba8bfaa77d67",
+      "kwargs": {
+        "column": "planRecurringPeriod",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "a8300984-5f89-455f-8454-915f1bf078fc",
+      "kwargs": {
+        "column": "planRecurringBillingSchedule",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "89266e50-8790-4284-9690-965a3e326f19",
+      "kwargs": {
+        "column": "planRecurringBillingSchedule",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "2c904f25-b3e7-4b2f-a995-4b5cf83ffe88",
+      "kwargs": {
+        "column": "planCost",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "1e5c349c-60a4-410b-87eb-4dcc46a3a6cf",
+      "kwargs": {
+        "column": "planCost",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "12f2043d-3fb0-4761-a01f-df965fecfb55",
+      "kwargs": {
+        "column": "planSetupCost",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "bb311df9-c196-40e9-bbe7-ef3653c833de",
+      "kwargs": {
+        "column": "planSetupCost",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "c4456d4b-351e-41da-9151-4dc5b8b0dad5",
+      "kwargs": {
+        "column": "planTax",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "fd1a9c77-ba91-4fd7-b746-102677ed82cb",
+      "kwargs": {
+        "column": "planTax",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "d37030ab-3af8-46ad-824f-01e4b557c6a2",
+      "kwargs": {
+        "column": "planCurrency",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "fdcca70c-f6fe-4d72-9e6d-b1b8ea041400",
+      "kwargs": {
+        "column": "planCurrency",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "07fea672-cdea-4966-8dd2-5c54ccc716ea",
+      "kwargs": {
+        "column": "planActive",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ad40f728-8fdf-4256-abd3-6c5d7ea121d6",
+      "kwargs": {
+        "column": "planActive",
+        "max_value": 32
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "c3f1e1e1-6130-4ba6-bd3e-030b55407f53",
+      "kwargs": {
+        "column": "notes",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "a429e8a2-6363-4115-87e9-7da0c4f56cc3",
+      "kwargs": {
+        "column": "notes",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "f30ab559-c451-4c5d-a13c-fb6513c16e02",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "8fb90773-246d-460b-82a9-f1ebf4ff332e",
+      "kwargs": {
+        "column": "creationby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "b913245e-da93-4c4b-828c-7567aaae3547",
+      "kwargs": {
+        "column": "creationby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "c85f0c75-2b52-44be-a8e4-e9c0ce07bdbe",
+      "kwargs": {
+        "column": "updatedate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "4f322da7-bdc6-4786-a48b-0c098d9ac115",
+      "kwargs": {
+        "column": "updateby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "1d989afe-1a4d-473b-9cd4-e6d0735ead54",
+      "kwargs": {
+        "column": "updateby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "cc0c0689-94be-4ace-8946-7232803df2ed",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "finDate",
+          "total",
+          "num_trans",
+          "num_customers",
+          "note"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "63647926-638d-4a5f-9451-13a743229d53",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "59f68ece-3a97-45af-a2f7-1e7a99efec27",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "03b0ffad-71a9-4647-8c7c-0bf42daf4b75",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "0845cad0-f5a5-4c82-9da6-c8d673647126",
+      "kwargs": {
+        "column": "finDate",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ca7d3711-2162-4d21-84ad-678daee34c5c",
+      "kwargs": {
+        "column": "finDate",
+        "max_value": 50
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "829b15f1-becb-4037-aa17-e2c038ba0602",
+      "kwargs": {
+        "column": "total",
+        "type_": "float64"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "d3a16619-ff35-4dd9-9dc4-7be3128f4521",
+      "kwargs": {
+        "column": "total",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "b979df87-3583-448a-8d96-cc0698678743",
+      "kwargs": {
+        "column": "num_trans",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "37271be7-acd5-4d8e-b17f-8b1862d42439",
+      "kwargs": {
+        "column": "num_trans",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "bd973abd-1457-47c9-959a-3328a51ec85d",
+      "kwargs": {
+        "column": "num_customers",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "8bf7cde9-21de-456b-874b-2a876fc99004",
+      "kwargs": {
+        "column": "num_customers",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "75a40c9d-b5d3-4586-b983-f037e9d3c94e",
+      "kwargs": {
+        "column": "note",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "99d9fecf-7bf6-4f18-b3bc-1fd0af2fd203",
+      "kwargs": {
+        "column": "note",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "224da728-0fea-4118-a64e-35fcb8dd4411",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "user_id",
+          "plan_id",
+          "date",
+          "amount",
+          "tax_amount",
+          "total",
+          "statusId",
+          "notes",
+          "creationdate",
+          "creationby",
+          "updatedate",
+          "updateby",
+          "discount",
+          "btype",
+          "nid",
+          "prefix",
+          "generationid",
+          "offerName"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "a7c7d030-6974-4618-b6d8-b371253e5ab6",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "a7894c66-0bdf-48b3-bff3-da7ae5d15f67",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "5a2ad52a-27dd-4a78-8f00-4b4ca4dc48a2",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "7e166366-87a8-439a-9e7a-346729b49b59",
+      "kwargs": {
+        "column": "user_id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "99f777f3-6eb3-485e-9430-f4cb2116da0f",
+      "kwargs": {
+        "column": "plan_id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "7191f148-be34-4a91-a0e7-b0165123c284",
+      "kwargs": {
+        "column": "date",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "88d2cfe0-757c-4e38-8bd5-78c8e4abab1d",
+      "kwargs": {
+        "column": "amount",
+        "type_": "float64"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "38ebd628-e646-490c-ab19-d6d0042788b1",
+      "kwargs": {
+        "column": "amount",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "5cb1489e-35fd-47b5-8a91-c6e09682ab15",
+      "kwargs": {
+        "column": "tax_amount",
+        "type_": "float64"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "dc448807-bf12-407c-9232-63885e84768d",
+      "kwargs": {
+        "column": "tax_amount",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "131ae516-56e2-4490-8e5a-995633bcae33",
+      "kwargs": {
+        "column": "total",
+        "type_": "float64"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "07164f20-ef47-457f-af84-09ba2de944d8",
+      "kwargs": {
+        "column": "total",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "b05e5224-b4fd-430f-b805-15d886713eed",
+      "kwargs": {
+        "column": "statusId",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "243ef65d-b204-489d-82a2-611c719faab4",
+      "kwargs": {
+        "column": "notes",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "192b0611-9d45-4b6e-92e5-1210fe01388f",
+      "kwargs": {
+        "column": "notes",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "ace44d35-246e-4c90-8a5c-a1f8ce47e1da",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "07ecc18c-2d49-4132-931b-344641df4a52",
+      "kwargs": {
+        "column": "creationby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "94146620-c5e8-4962-9492-dfd84d511cd1",
+      "kwargs": {
+        "column": "creationby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "0911caf0-b17a-40f1-bc86-d57008494724",
+      "kwargs": {
+        "column": "updatedate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "5069e221-6b27-42df-8878-ea1fa8f578eb",
+      "kwargs": {
+        "column": "updateby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "9c76db21-57d1-4d58-8338-87e42028a0e9",
+      "kwargs": {
+        "column": "updateby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "25997fdc-c375-4154-82d6-e574fe8929c4",
+      "kwargs": {
+        "column": "discount",
+        "type_": "float64"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "45786a65-2bde-4adf-8f49-8e337ceb0ea9",
+      "kwargs": {
+        "column": "discount",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "c3e54d1e-d6a7-448d-bc48-a599c5267d41",
+      "kwargs": {
+        "column": "btype",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "9bd17ab9-e6c1-4e5b-aeed-1f2d6624f3df",
+      "kwargs": {
+        "column": "btype",
+        "max_value": 3
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "022ee328-4b2b-45df-b2ef-315cd44dc6ce",
+      "kwargs": {
+        "column": "nid",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "d2ca3ab1-49c6-4ba7-a654-c285dcf4971d",
+      "kwargs": {
+        "column": "prefix",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "0959f574-f02b-48e8-abcc-59e107c58a0d",
+      "kwargs": {
+        "column": "prefix",
+        "max_value": 2
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "7a079784-81ad-4859-8fcf-d4bd16ca9217",
+      "kwargs": {
+        "column": "generationid",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "cf752bca-8bb1-4d16-bfff-73b2c4058b07",
+      "kwargs": {
+        "column": "offerName",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "0a7d9026-4667-40f1-9927-d631002b57e8",
+      "kwargs": {
+        "column": "offerName",
+        "max_value": 150
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "fd3ce3c3-15e7-441c-a541-87c2b1a4553e",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "value",
+          "notes",
+          "creationdate",
+          "creationby",
+          "updatedate",
+          "updateby"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "de83f139-cd45-4f77-834c-a1fb1a488a10",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "e1b895db-c70b-43a8-b550-ec27ec5e1964",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "82840843-7f0e-4775-95b9-b0335b138c61",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "6032fbed-4806-4a84-ade3-87d562d8e65f",
+      "kwargs": {
+        "column": "value",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "13c190b0-f175-41f5-88f9-e0933c6a3b7e",
+      "kwargs": {
+        "column": "value",
+        "max_value": 32
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "0ca1a3f1-1678-4def-88cf-919ad2a6544e",
+      "kwargs": {
+        "column": "notes",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "9ea78939-4120-493f-b4c0-f335c879cf24",
+      "kwargs": {
+        "column": "notes",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "3a14475a-d7b9-443c-9b7b-132fa3bee2ae",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "8a56b63c-8a50-420a-bc69-7b86f7a0fe64",
+      "kwargs": {
+        "column": "creationby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ea5646ca-a7c1-4f45-b8fa-934e05c7bf9d",
+      "kwargs": {
+        "column": "creationby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "1db01214-a293-438a-a0a8-c31ad6963113",
+      "kwargs": {
+        "column": "updatedate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "072a184e-6bf0-4f6b-86a3-91f664b9b63b",
+      "kwargs": {
+        "column": "updateby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "e009c2fd-773b-44bc-a7b2-8158638dc697",
+      "kwargs": {
+        "column": "updateby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "339869a2-9154-45c2-8eda-093463ede71a",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "invoice_id",
+          "amount",
+          "date",
+          "type_id",
+          "notes",
+          "creationdate",
+          "creationby",
+          "updatedate",
+          "updateby"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "a11e230e-f4a4-4b99-aabb-678f08f829d2",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "07b838af-dbca-4bcc-8fe9-e1066d3b0a8e",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "3b30f84a-7d09-439f-8d52-3308e13a2be4",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "3e644652-ed20-493b-adb1-ffb3ca79d383",
+      "kwargs": {
+        "column": "invoice_id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "54170859-d2ee-421f-81dd-6f3602d038f1",
+      "kwargs": {
+        "column": "amount",
+        "type_": "float64"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "9b396918-5f92-4087-bed4-83fc5788bd09",
+      "kwargs": {
+        "column": "amount",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "79a2d87a-9802-4dbc-8bb0-650fe8841862",
+      "kwargs": {
+        "column": "date",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "adf0f7ef-36f6-41c9-8041-734b23e0f254",
+      "kwargs": {
+        "column": "type_id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "821cad6a-fae6-43d4-8551-9199af4fe48b",
+      "kwargs": {
+        "column": "notes",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "f28edefa-1855-47d5-8c15-eafeec6d44d2",
+      "kwargs": {
+        "column": "notes",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "1c89337a-4eab-40db-9c70-686674cb70fa",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "8552e136-58d9-454e-9bff-dd86bbe711a9",
+      "kwargs": {
+        "column": "creationby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "d7e80a4a-4113-4bb2-bb1b-a4405b62d0e4",
+      "kwargs": {
+        "column": "creationby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "51b734f7-960e-4d8e-90c8-e487dfb32312",
+      "kwargs": {
+        "column": "updatedate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "b6722e1c-81db-4768-87e3-5037ff3ade6f",
+      "kwargs": {
+        "column": "updateby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "e03d4ce3-3270-4b79-87e2-7f3f8604e9b3",
+      "kwargs": {
+        "column": "updateby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "791be3b3-a099-4170-b5e7-38f01e656a8b",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "value",
+          "notes",
+          "creationdate",
+          "creationby",
+          "updatedate",
+          "updateby"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "c136d181-80db-41cb-b174-97725f1d6a04",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "20a6c797-095c-4079-af5d-c594ab18b9d8",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "70a97615-3997-455f-8bfb-475c30096478",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "91ef1b22-9ad5-485f-9060-0f6023048b1c",
+      "kwargs": {
+        "column": "value",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "fd79ca63-43d7-49cf-905b-f1d99ebe6894",
+      "kwargs": {
+        "column": "value",
+        "max_value": 32
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "fcde01ef-df4b-4d66-98d9-6281fb4b2c32",
+      "kwargs": {
+        "column": "notes",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "bf9c5135-64e9-4541-bf60-66f2f60a3d1d",
+      "kwargs": {
+        "column": "notes",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "fc4b112d-94d7-4145-a71a-02c4ce180e0d",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "12d49c28-5717-4036-8836-dd2f219d3f8c",
+      "kwargs": {
+        "column": "creationby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "3ab8b188-8931-4e48-a524-a327f20614ce",
+      "kwargs": {
+        "column": "creationby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "7c564882-9866-49f1-b488-e74761b325ac",
+      "kwargs": {
+        "column": "updatedate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "24961b00-e4e4-4711-b478-9f582d994af9",
+      "kwargs": {
+        "column": "updateby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "fe146150-c09d-4d08-ac4c-77f9d4a20c00",
+      "kwargs": {
+        "column": "updateby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "da6aeca2-1006-4ddd-ba90-34d68eb761d2",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "balance_before",
+          "amount",
+          "bounce",
+          "allowance",
+          "balance_current",
+          "due_date",
+          "userID",
+          "trans_status",
+          "creationdate",
+          "note",
+          "type"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "a555136c-88c3-4a4d-8011-a5ee305047c1",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "26b2c208-dd6d-4471-82e8-03917db56dca",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "e7c7f1bf-e827-47a2-b8f6-1cf4cf0cbd40",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "00e6eaf2-72e1-441e-81ff-71e36d31d961",
+      "kwargs": {
+        "column": "balance_before",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "07f0b60b-f8e3-4889-b51b-6051750212c3",
+      "kwargs": {
+        "column": "amount",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "8189f99c-45d1-4376-a0f5-6cb85f8c114b",
+      "kwargs": {
+        "column": "bounce",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "47af40ba-f1cb-4c51-b6fb-32c2aa6dcc80",
+      "kwargs": {
+        "column": "bounce",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "fbaaa10b-5fdf-433d-8edf-2eac13f3ba91",
+      "kwargs": {
+        "column": "allowance",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "6539b9a6-0106-40e8-b4fb-0cb63a70d2ac",
+      "kwargs": {
+        "column": "balance_current",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "39d21ae2-486d-45f6-b7cd-56ae73c9ae2f",
+      "kwargs": {
+        "column": "due_date",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "69ef560e-5b19-42dc-aa0c-ed6581d89af3",
+      "kwargs": {
+        "column": "userID",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "651f852b-bc51-4800-954b-f66c41302312",
+      "kwargs": {
+        "column": "trans_status",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "90824b0b-4092-4e1c-878c-d39ace6288af",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "c8a5a651-aab1-40d0-8ee0-d9b49cc50ecd",
+      "kwargs": {
+        "column": "note",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "c5c6ccf0-c881-4341-8d25-425ebbc23dd1",
+      "kwargs": {
+        "column": "note",
+        "max_value": 250
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "05f3d56d-0447-4cb5-9cbb-fcebc5b2dc1f",
+      "kwargs": {
+        "column": "type",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "067f487d-7ce1-4b47-82bc-428567cbd749",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "Name",
+          "value",
+          "cstatus",
+          "cstart",
+          "cend",
+          "speeds",
+          "description",
+          "creationdate",
+          "creationby",
+          "updatedate",
+          "updateby",
+          "period"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "064ac845-8bbe-41db-aad8-ac69e59d00f2",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "6a5efd01-109c-4c5c-8684-2149bb237e57",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "60ba85e1-2352-4e00-aab9-58cb63a8f431",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "d1677465-8c87-4683-9e98-45c04cc4c239",
+      "kwargs": {
+        "column": "Name",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ab7dc5a9-1438-4570-9c4c-441622fb6884",
+      "kwargs": {
+        "column": "Name"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "2babb98c-0b05-4404-a01f-e0be0be08a8b",
+      "kwargs": {
+        "column": "Name",
+        "max_value": 255
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "dd17147e-2228-4acc-9da4-0a3a4bc30c09",
+      "kwargs": {
+        "column": "value",
+        "type_": "float64"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "31e4943d-f500-42ed-9460-0bd4d601988d",
+      "kwargs": {
+        "column": "value",
+        "max_value": 1.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "fdcb689d-a920-45f9-8f5b-0bc0604d7f81",
+      "kwargs": {
+        "column": "cstatus",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "a7d63242-7830-4bfc-bda7-a48b5e34860a",
+      "kwargs": {
+        "column": "cstatus",
+        "max_value": 200
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "a460d8b1-f7a4-4f37-bf2e-f895f99533c6",
+      "kwargs": {
+        "column": "cstart",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "e0ec8aa8-aa44-43be-ae12-b45e59df5ae4",
+      "kwargs": {
+        "column": "cend",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "59dcb752-1fba-4036-9b72-3c744e377f08",
+      "kwargs": {
+        "column": "speeds",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "6f565263-90bf-44bf-8d86-190bc7bab574",
+      "kwargs": {
+        "column": "description",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "bcc07efd-69da-40b4-9f2e-b3eaa37bbb97",
+      "kwargs": {
+        "column": "description",
+        "max_value": 255
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "5fae2a99-4a36-4173-ad58-240adfd34ede",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "e8139f97-8d3d-44ed-bf1d-b686a50b1888",
+      "kwargs": {
+        "column": "creationby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "5b7bc8a3-3681-42a4-bce4-cc820253d203",
+      "kwargs": {
+        "column": "creationby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "74da68c0-ccc8-4a47-b2ae-d4a66a4f71dd",
+      "kwargs": {
+        "column": "updatedate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "3b0fe9aa-2c6a-49fa-853e-2239130ae7ad",
+      "kwargs": {
+        "column": "updateby",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "4e5c174a-5f62-456f-9a07-29ade4fdf774",
+      "kwargs": {
+        "column": "updateby",
+        "max_value": 128
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "c1bd4d00-a2ff-4589-a095-899c7366371a",
+      "kwargs": {
+        "column": "period",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "a05f3fff-5271-499e-abb2-d205cc01fc06",
+      "kwargs": {
+        "column": "period",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "d3b1cd0b-1ec4-4180-b7ac-ef67e9fad65e",
+      "kwargs": {
+        "column_list": [
+          "gid",
+          "gdate",
+          "gtime",
+          "month",
+          "note"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "1635e751-574e-4807-8eea-d820a2a23c05",
+      "kwargs": {
+        "column": "gid",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "1b098b93-f682-4a49-9507-95aabcadd597",
+      "kwargs": {
+        "column": "gid"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "8377f28b-6d2d-4f17-a4dd-94edf61b8482",
+      "kwargs": {
+        "column": "gid",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "e2f874a7-195d-4de6-a949-21fcc40d33b2",
+      "kwargs": {
+        "column": "gdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "5ded027b-ddf2-437c-9ff8-6f5630b20b50",
+      "kwargs": {
+        "column": "gtime",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "7891c571-5d05-4a0c-9b97-af998cd4be55",
+      "kwargs": {
+        "column": "month",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "2090659a-5545-4eb6-aca5-17d00dc5fe05",
+      "kwargs": {
+        "column": "month",
+        "max_value": 10
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "965ac946-b533-4c8c-96e3-64642546faa5",
+      "kwargs": {
+        "column": "note",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "b5e8288c-2d50-4374-9797-f38b96168fe2",
+      "kwargs": {
+        "column": "note",
+        "max_value": 250
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "253d1e1b-a792-4525-80cf-d4c9bef919a9",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "transtype",
+          "creationdate"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "9314b90e-192c-41d3-958c-1fc444f9468c",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "9a919bae-1bb5-4b35-b189-919ebab6d897",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "bde42733-a686-4775-9ed2-82e5c9566f44",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "c1e9fcb6-9e2b-4bc1-abc5-b39ac14634ec",
+      "kwargs": {
+        "column": "transtype",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "705b7568-6e70-4fd3-ac4e-bbbdf54fcf0f",
+      "kwargs": {
+        "column": "transtype",
+        "max_value": 50
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "e7daf30c-e49e-4ae5-ba04-80680fcc5437",
+      "kwargs": {
+        "column": "creationdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "01aeafe2-5d24-48b2-9109-a2314770247f",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "transdate",
+          "transtime",
+          "typeid",
+          "billid",
+          "description"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "e01cd5c3-1c8d-4436-a5f5-962464f01cae",
+      "kwargs": {
+        "column": "id",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "8c83811e-f2f9-469f-a310-c55511980a84",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "432a4ed1-87cb-4280-9412-404d27de5495",
+      "kwargs": {
+        "column": "id",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "a447a7db-0502-45e5-9217-d0031e26bbfa",
+      "kwargs": {
+        "column": "transdate",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "443b4d8b-c1ea-4751-ba1b-130d253f55ec",
+      "kwargs": {
+        "column": "transtime",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "c1b8f2f8-feea-4cb1-9af9-c8441ae26b85",
+      "kwargs": {
+        "column": "typeid",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "096288e5-f4e9-4187-9af4-88078561cb99",
+      "kwargs": {
+        "column": "billid",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ce61829e-448e-45a5-a078-02e939f09fc7",
+      "kwargs": {
+        "column": "description",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "a33a8d97-afc4-4e61-877c-20aa94206c1e",
+      "kwargs": {
+        "column": "description",
+        "max_value": 255
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_value_lengths_to_be_between"
+    },
+    {
+      "id": "58cfe8a4-1470-45a6-91fc-ab432a557816",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {
+        "check_id": "billing_history:not_null:id"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "36ec4597-eb98-4ecb-8c9f-723b181b71eb",
+      "kwargs": {
+        "column": "billAction"
+      },
+      "meta": {
+        "check_id": "billing_history:not_null:billAction"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "c093ffd1-c0c2-4c6e-af17-ee51b1e1b5b1",
+      "kwargs": {
+        "column": "paymentmethod",
+        "value_set": [
+          "PrePaid",
+          "PostPaid"
+        ]
+      },
+      "meta": {
+        "check_id": "billing_history:domain:paymentmethod"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "40e81161-2650-4b66-ae3d-6354660c33c9",
+      "kwargs": {
+        "column": "planName"
+      },
+      "meta": {
+        "check_id": "billing_plans:not_null:planName"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "1ab59d90-01a8-40c4-bac4-ef618d0f74aa",
+      "kwargs": {
+        "column": "planActive",
+        "value_set": [
+          "yes",
+          "no"
+        ]
+      },
+      "meta": {
+        "check_id": "billing_plans:domain:planActive"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "40209ff0-4ed6-481f-a05e-8649db422622",
+      "kwargs": {
+        "column": "planRecurringBillingSchedule",
+        "value_set": [
+          "Fixed",
+          "Dynamic"
+        ]
+      },
+      "meta": {
+        "check_id": "billing_plans:domain:planRecurringBillingSchedule"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "067abec8-4c39-4f22-95ef-98d4ea698e9c",
+      "kwargs": {
+        "column": "finDate",
+        "regex": "^\\d{4}/\\d{2}$"
+      },
+      "meta": {
+        "check_id": "financial_summary:format:finDate"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "4b48470a-e5c1-4fed-ab71-0351cf9cad61",
+      "kwargs": {
+        "column": "finDate"
+      },
+      "meta": {
+        "check_id": "financial_summary:unique:finDate"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "db2d1859-f3dd-45ed-ab24-778b4e0dbc9c",
+      "kwargs": {
+        "column": "date"
+      },
+      "meta": {
+        "check_id": "invoice:not_null:date"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "16691c0f-d61e-48e8-aaa6-adde60dd482c",
+      "kwargs": {
+        "column": "amount"
+      },
+      "meta": {
+        "check_id": "invoice:not_null:amount"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "34fb0084-c718-4a11-b4f0-c9587bf74ff1",
+      "kwargs": {
+        "column": "tax_amount"
+      },
+      "meta": {
+        "check_id": "invoice:not_null:tax_amount"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "b49397bd-0f7b-4194-983c-d639ee4b368c",
+      "kwargs": {
+        "column": "total"
+      },
+      "meta": {
+        "check_id": "invoice:not_null:total"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "5255e293-6cf4-4bbf-84d8-46f9faabf50d",
+      "kwargs": {
+        "column": "statusId"
+      },
+      "meta": {
+        "check_id": "invoice:not_null:statusId"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "97e775b9-701c-4d23-8cd8-ff0e865db7d1",
+      "kwargs": {
+        "column": "discount"
+      },
+      "meta": {
+        "check_id": "invoice:not_null:discount"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "014f3b85-f5aa-435e-b77c-a4b63e879885",
+      "kwargs": {
+        "column_list": [
+          "amount",
+          "tax_amount",
+          "discount"
+        ],
+        "ignore_row_if": "any_value_is_missing",
+        "sum_total": {
+          "column": "total"
+        }
+      },
+      "meta": {
+        "check_id": "invoice:consistency:total"
+      },
+      "severity": "critical",
+      "type": "expect_multicolumn_sum_to_equal"
+    },
+    {
+      "id": "5040608c-e8d8-4be9-af5b-48ff061d152c",
+      "kwargs": {
+        "column": "value"
+      },
+      "meta": {
+        "check_id": "invoice_status:not_null:value"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "0162e834-504a-4235-886b-0643292c1102",
+      "kwargs": {
+        "column": "value",
+        "value_set": [
+          "open",
+          "disputed",
+          "draft",
+          "sent",
+          "paid",
+          "partial"
+        ]
+      },
+      "meta": {
+        "check_id": "invoice_status:domain:value"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "5ef152da-5e40-4b9f-8081-d58a89679c1a",
+      "kwargs": {
+        "column": "notes"
+      },
+      "meta": {
+        "check_id": "invoice_status:not_null:notes"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "fec34f6e-f34b-4c2e-bb97-a6262e1b2a44",
+      "kwargs": {
+        "column": "invoice_id"
+      },
+      "meta": {
+        "check_id": "payment:not_null:invoice_id"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "099cf4cf-74de-4057-95fc-df3dea953e53",
+      "kwargs": {
+        "column": "amount",
+        "min_value": 0.0,
+        "strict_min": true
+      },
+      "meta": {
+        "check_id": "payment:range:amount"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "782111a3-a77a-4f18-800f-343ba45af29d",
+      "kwargs": {
+        "column": "type_id"
+      },
+      "meta": {
+        "check_id": "payment:not_null:type_id"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "e7340e67-564a-46ed-82b8-f6522a7ae17e",
+      "kwargs": {
+        "column": "value",
+        "value_set": [
+          "PostPaid",
+          "PrePaid_TOPUP",
+          "PrePaid_CARD",
+          "PostPaid_RollBack"
+        ]
+      },
+      "meta": {
+        "check_id": "payment_type:domain:value"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "cdba58b3-81ff-4ae8-855b-8ff273b3847c",
+      "kwargs": {
+        "column": "balance_before"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:balance_before"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "42450ea0-68bf-4231-bde6-b7d5332df3ae",
+      "kwargs": {
+        "column": "bounce"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:bounce"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "8b0a22e5-546f-4c2a-a759-e40fdbc17e0c",
+      "kwargs": {
+        "column": "allowance"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:allowance"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "18a01de7-047c-4336-9c4b-58ff32b62967",
+      "kwargs": {
+        "column": "balance_current"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:balance_current"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "20f5ee36-8551-4e51-8729-bc4d213ce334",
+      "kwargs": {
+        "column": "due_date"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:due_date"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "3f00bb38-8c07-4d35-bd31-dc7c63d2a54d",
+      "kwargs": {
+        "column": "userID"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:userID"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "2942f3cb-2d6d-407a-ac6b-d9a23a4bd63c",
+      "kwargs": {
+        "column": "trans_status"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:trans_status"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "52240ba1-6583-4329-8c78-d49848055bc1",
+      "kwargs": {
+        "column": "creationdate"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:not_null:creationdate"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "4bab46ff-08d5-483a-98d6-69ee1e3f6fb9",
+      "kwargs": {
+        "column": "type",
+        "value_set": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:domain:type"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "76240fb4-e95b-43dd-8b5c-b8cb4ebfe459",
+      "kwargs": {
+        "column_A": "due_date",
+        "column_B": "creationdate"
+      },
+      "meta": {
+        "check_id": "prepaid_transaction:range:due_date"
+      },
+      "severity": "critical",
+      "type": "expect_column_pair_values_a_to_be_greater_than_b"
+    },
+    {
+      "id": "d985fa16-00f7-4440-8726-acba8bffcfbc",
+      "kwargs": {
+        "column": "Name"
+      },
+      "meta": {
+        "check_id": "tblcampaign:not_null:Name"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "2576a950-c5ea-405a-bee0-d4026ea67698",
+      "kwargs": {
+        "column": "description"
+      },
+      "meta": {
+        "check_id": "tblcampaign:not_null:description"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "85d9d6e5-1a3c-428f-a159-99900caae2a8",
+      "kwargs": {
+        "column": "cstatus",
+        "value_set": [
+          "Active",
+          "InActive"
+        ]
+      },
+      "meta": {
+        "check_id": "tblcampaign:domain:cstatus"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "0f138b63-4236-4d91-82fa-6dfe670bbd19",
+      "kwargs": {
+        "column_A": "cend",
+        "column_B": "cstart"
+      },
+      "meta": {
+        "check_id": "tblcampaign:range:cend"
+      },
+      "severity": "critical",
+      "type": "expect_column_pair_values_a_to_be_greater_than_b"
+    },
+    {
+      "id": "5b2a83ef-0df4-46fc-bdc2-5916cf48cd67",
+      "kwargs": {
+        "column": "gid"
+      },
+      "meta": {
+        "check_id": "tblgeneration:not_null:gid"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "023a898c-195f-4e65-a55a-28edf2d7a7a4",
+      "kwargs": {
+        "column": "month",
+        "regex": "^\\d{4}-\\d{2}$"
+      },
+      "meta": {
+        "check_id": "tblgeneration:format:month"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "04b9d22f-00d2-4c22-9a12-009f4e09c106",
+      "kwargs": {
+        "column": "month"
+      },
+      "meta": {
+        "check_id": "tblgeneration:unique:month"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "a986e92b-69d4-423c-91d4-33ebaca25277",
+      "kwargs": {
+        "column": "transdate"
+      },
+      "meta": {
+        "check_id": "tbllinetransactions:not_null:transdate"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "19c0f396-515b-42c9-a3bc-c3c309de4a00",
+      "kwargs": {
+        "column": "creationdate",
+        "max_value": "2026-05-25T12:53:12.965099",
+        "min_value": "2026-05-24T12:53:12.964981"
+      },
+      "meta": {
+        "check_id": "global:freshness:transactions"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "5eb835dc-0ea8-4842-a8e3-3b69afc52eef",
+  "meta": {
+    "great_expectations_version": "1.17.1"
+  },
+  "name": "expectation_suite",
+  "notes": null
+}
