@@ -1,9 +1,8 @@
 import great_expectations as gx
+from datetime import datetime, timedelta
 
 context = gx.get_context(mode="file")
 suite = context.suites.get("expectation_suite")
-
-from datetime import datetime, timedelta
 
 suite.add_expectation(
     gx.expectations.ExpectColumnValuesToNotBeNull(
