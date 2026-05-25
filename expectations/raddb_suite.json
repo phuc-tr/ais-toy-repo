@@ -1,0 +1,464 @@
+{
+  "expectations": [
+    {
+      "id": "a64171a9-bc87-4c89-9341-f4b7991b8de1",
+      "kwargs": {
+        "column_list": [
+          "radacctid",
+          "acctsessionid",
+          "acctuniqueid",
+          "realm",
+          "nasportid",
+          "nasporttype",
+          "acctstarttime",
+          "acctupdatetime",
+          "acctstoptime",
+          "acctinterval",
+          "acctsessiontime",
+          "acctauthentic",
+          "connectinfo_start",
+          "connectinfo_stop",
+          "acctinputoctets",
+          "acctoutputoctets",
+          "calledstationid",
+          "callingstationid",
+          "acctterminatecause",
+          "servicetype",
+          "framedprotocol",
+          "framedipv6address",
+          "framedipv6prefix",
+          "framedinterfaceid",
+          "delegatedipv6prefix"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "7de81414-12b8-4242-bc3c-c17fbf250e38",
+      "kwargs": {
+        "column": "radacctid",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "586bc56b-a0db-40f9-b4e5-6f6c422074e6",
+      "kwargs": {
+        "column": "radacctid"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "00a2936a-9f25-4888-b389-ee0bfe9e907c",
+      "kwargs": {
+        "column": "acctsessionid",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "7ca5f557-009a-4bdc-b553-5e96a858ac58",
+      "kwargs": {
+        "column": "acctuniqueid",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "97069b1b-d5c3-455c-948d-194cd553f2a4",
+      "kwargs": {
+        "column": "acctuniqueid"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "a8f020cd-f89b-4d2c-a37b-33e91700a918",
+      "kwargs": {
+        "column": "realm",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "38c7f464-5a84-471d-b790-0ac420929088",
+      "kwargs": {
+        "column": "nasportid",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "a2f7138c-fea9-4f24-9999-092b96a76c94",
+      "kwargs": {
+        "column": "nasporttype",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "06d97277-ee16-4deb-97cf-59efa0272711",
+      "kwargs": {
+        "column": "acctstarttime",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "79149199-416a-430a-b1d5-f9397671e5c6",
+      "kwargs": {
+        "column": "acctupdatetime",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "afffd3c6-2c8d-49b7-8683-d7b644e6fd0a",
+      "kwargs": {
+        "column": "acctstoptime",
+        "type_": "datetime64[ns]"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "73f2255c-2f1e-4af3-8923-76a2b8621c89",
+      "kwargs": {
+        "column": "acctinterval",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "e47bfbc2-1f15-455b-8330-93cb36bd2e51",
+      "kwargs": {
+        "column": "acctsessiontime",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "acc0c143-a568-4d5a-b3c1-61dcf1a96a89",
+      "kwargs": {
+        "column": "acctauthentic",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "2ad6c3f7-cbca-4937-8986-e6ad3fe77dd7",
+      "kwargs": {
+        "column": "connectinfo_start",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "2877c16b-2002-4979-af51-94bda2795b3c",
+      "kwargs": {
+        "column": "connectinfo_stop",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ef39684f-edd7-4c86-9590-4ce33f08648a",
+      "kwargs": {
+        "column": "acctinputoctets",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "10bd41f8-8d2a-4ccf-94c6-1073ee93f526",
+      "kwargs": {
+        "column": "acctoutputoctets",
+        "type_": "int32"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "6536b45e-4cf8-4b86-8c44-c7e217466451",
+      "kwargs": {
+        "column": "calledstationid",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "d95dc5d0-ba5c-4365-926f-10fd4372fecf",
+      "kwargs": {
+        "column": "callingstationid",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "a73e6e0f-5ccb-445e-956d-b9d9a97cca59",
+      "kwargs": {
+        "column": "acctterminatecause",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "b45b0e6f-7379-45e6-aebb-68412c841c2d",
+      "kwargs": {
+        "column": "servicetype",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "24364ae3-29f0-4608-b9e0-eaee41c0d162",
+      "kwargs": {
+        "column": "framedprotocol",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "ec09f803-589e-414c-b2e5-08ee3e3ab2ad",
+      "kwargs": {
+        "column": "framedipv6address",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "461b8180-71a3-422f-9550-063947051c4a",
+      "kwargs": {
+        "column": "framedipv6prefix",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "d9ff6204-1d34-495d-9709-ba1eb390e812",
+      "kwargs": {
+        "column": "framedinterfaceid",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "c2848897-2965-4c11-a098-3337bb531b37",
+      "kwargs": {
+        "column": "delegatedipv6prefix",
+        "type_": "str"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "3a70887b-bd53-43db-9342-fabce8ed945d",
+      "kwargs": {
+        "column": "radacctid"
+      },
+      "meta": {
+        "check_id": "raddb:not_null:radacctid"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "cc30412d-c2d0-4ea6-8539-c4b0e1ce9693",
+      "kwargs": {
+        "column": "acctsessionid"
+      },
+      "meta": {
+        "check_id": "raddb:not_null:acctsessionid"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "09d7a77a-2bbc-4088-846b-d672428a4d5a",
+      "kwargs": {
+        "column": "acctuniqueid"
+      },
+      "meta": {
+        "check_id": "raddb:not_null:acctuniqueid"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "5f153b36-dbbb-44a6-8fa2-927796db2727",
+      "kwargs": {
+        "column": "nasportid",
+        "regex": "^Uniq-Sess-ID\\d+$"
+      },
+      "meta": {
+        "check_id": "raddb:format:nasportid"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "3ebeb24c-4d96-45ae-85d9-d6d102765b2b",
+      "kwargs": {
+        "column": "nasporttype",
+        "value_set": [
+          "Virtual",
+          "ISDN"
+        ]
+      },
+      "meta": {
+        "check_id": "raddb:domain:nasporttype"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "7d387d8f-e267-447e-bc3b-0c8045f74dc7",
+      "kwargs": {
+        "column_A": "acctstoptime",
+        "column_B": "acctstarttime",
+        "or_equal": true
+      },
+      "meta": {
+        "check_id": "raddb:range:acctstoptime"
+      },
+      "severity": "critical",
+      "type": "expect_column_pair_values_a_to_be_greater_than_b"
+    },
+    {
+      "id": "ae9c0c35-7626-49f6-87c8-2ca428f502fe",
+      "kwargs": {
+        "column": "acctsessiontime",
+        "quantile_ranges": {
+          "quantiles": [
+            0.95
+          ],
+          "value_ranges": [
+            [
+              0,
+              30000
+            ]
+          ]
+        }
+      },
+      "meta": {
+        "check_id": "raddb:range:acctsessiontime"
+      },
+      "severity": "critical",
+      "type": "expect_column_quantile_values_to_be_between"
+    },
+    {
+      "id": "6e57d361-12e5-4110-8985-d674b80bf576",
+      "kwargs": {
+        "column": "calledstationid",
+        "mostly": 0.9
+      },
+      "meta": {
+        "check_id": "raddb:not_null:calledstationid"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "bc2f12d4-743f-43bb-8ca9-53f8ddeae090",
+      "kwargs": {
+        "column": "callingstationid",
+        "mostly": 0.9
+      },
+      "meta": {
+        "check_id": "raddb:not_null:callingstationid"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "11c3cf43-1b30-4fc9-99f6-e309de291af6",
+      "kwargs": {
+        "column": "acctterminatecause",
+        "value_set": [
+          "User-Request",
+          "Admin-Reset",
+          "Host-Request",
+          "NAS-Error",
+          "Port-Error",
+          "Service-Unvaliable"
+        ]
+      },
+      "meta": {
+        "check_id": "raddb:domain:acctterminatecause"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "e289652d-3570-4f1e-9a40-b8a8d408db1c",
+      "kwargs": {
+        "column": "acctstarttime",
+        "max_value": "2026-05-25T12:06:50.312170",
+        "min_value": "2026-05-24T11:06:50.311979"
+      },
+      "meta": {
+        "check_id": "raddb:freshness:acctstarttime"
+      },
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "933d1d31-be24-4533-9bd9-e555af834d9a",
+  "meta": {
+    "great_expectations_version": "1.17.1"
+  },
+  "name": "expectation_suite",
+  "notes": null
+}
