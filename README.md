@@ -54,6 +54,98 @@ Data Contract (YAML)
 
 ---
 
+## Worked Example (raddb)
+
+### Stage 1 — What the CLI can generate
+
+Given this contract snippet:
+
+```yaml
+models:
+  radacct:
+    fields:
+      radacctid:
+        type: integer
+        required: true
+        unique: true          # ← CLI picks this up
+
+      nasporttype:
+        type: string
+        quality:
+          - type: library
+            metric: invalidValues
+            arguments:
+              validValues: [Virtual, ISDN]   # ← CLI picks this up
+
+      nasportid:
+        type: string
+        quality:
+          - type: text
+            description: Must follow format "Uniq-Sess-ID<id>" where <id> are numerics.
+            # ← CLI cannot express free-text rules — skipped
+
+      acctsessiontime:
+        type: integer
+        quality:
+          - type: sql
+            description: 95% of acctsessiontime should be less than 30000 seconds.
+            query: SELECT quantile(acctsessiontime, 0.95) FROM radacct
+            # ← CLI cannot express SQL rules — skipped
+
+servicelevels:
+  freshness:
+    description: Data should be no older than 25 hours.
+    timestampField: radacct.acctstarttime
+    # ← CLI cannot express freshness SLAs — skipped
+```
+
+The CLI produces only the checks it can express structurally:
+
+```json
+{ "type": "expect_column_values_to_be_of_type",  "kwargs": { "column": "radacctid", "type_": "int32" }, "meta": {} }
+{ "type": "expect_column_values_to_be_unique",    "kwargs": { "column": "radacctid" },                  "meta": {} }
+{ "type": "expect_column_values_to_be_of_type",  "kwargs": { "column": "nasporttype", "type_": "str" }, "meta": {} }
+```
+
+`nasporttype`'s domain check, `nasportid`'s format rule, `acctsessiontime`'s percentile rule, and the freshness SLA produce no expectations — they become gaps.
+
+Note: the CLI translates `required: true` into a type check, not a null check. `not_null` for required fields is therefore always a gap passed to the LLM.
+
+---
+
+### Stage 2 — Gaps passed to the LLM
+
+The gap classifier compares the contract rules against what the CLI covered and emits the unresolved items as a YAML fragment:
+
+```yaml
+radacct.radacctid:
+  not_null: "radacctid is required (primaryKey)"
+
+radacct.nasportid:
+  format: 'Must follow format "Uniq-Sess-ID<id>" where <id> are numerics.'
+
+radacct.nasporttype:
+  domain: "Ensure nasporttype uses valid port types: [Virtual, ISDN]"
+
+radacct.acctsessiontime:
+  range: "95% of acctsessiontime should be less than 30000 seconds."
+
+radacct.acctstarttime:
+  freshness: "Data should be no older than 25 hours."
+```
+
+The LLM receives this fragment along with the data profile and generates GX expectations for each item, tagging every one with a `check_id` so the evaluator can attribute it:
+
+```json
+{ "type": "expect_column_values_to_not_be_null",       "kwargs": { "column": "radacctid" },                                  "meta": { "check_id": "radacct:not_null:radacctid" } }
+{ "type": "expect_column_values_to_match_regex",        "kwargs": { "column": "nasportid", "regex": "^Uniq-Sess-ID\\d+$" },  "meta": { "check_id": "radacct:format:nasportid" } }
+{ "type": "expect_column_values_to_be_in_set",          "kwargs": { "column": "nasporttype", "value_set": ["Virtual","ISDN"] }, "meta": { "check_id": "radacct:domain:nasporttype" } }
+{ "type": "expect_column_quantile_values_to_be_between","kwargs": { "column": "acctsessiontime", ... },                       "meta": { "check_id": "radacct:range:acctsessiontime" } }
+{ "type": "expect_column_values_to_be_between",         "kwargs": { "column": "acctstarttime", ... },                         "meta": { "check_id": "radacct:freshness:acctstarttime" } }
+```
+
+---
+
 ## Evaluation Methodology
 
 Evaluation compares **expected checks** (derived from the data contract) against **generated checks** (parsed from the committed suite JSON).
@@ -99,7 +191,7 @@ FN = expected − generated   (missed rules)
 | billing | CLI | 1.000 | 0.268 | 0.423 | 15 | 0 | 41 |
 | billing | CLI + LLM | 0.964 | 0.482 | 0.643 | 27 | 1 | 29 |
 | bsadb | CLI | 1.000 | 0.261 | 0.414 | 6 | 0 | 17 |
-| bsadb | CLI + LLM | 0.643 | 0.391 | 0.486 | 9 | 5 | 14 |
+| bsadb | CLI + LLM | 0.929 | 0.565 | 0.703 | 13 | 1 | 10 |
 
 ### LLM contribution
 
@@ -107,7 +199,7 @@ FN = expected − generated   (missed rules)
 |---|---|---|---|
 | raddb | +8 | 0 | +0.603 |
 | billing | +12 | 1 | +0.220 |
-| bsadb | +3 | 5 | +0.072 |
+| bsadb | +7 | 1 | +0.289 |
 
 ### Execution (exception-free rate, latest run)
 
@@ -125,8 +217,6 @@ All generated expectations ran without exceptions across every dataset.
 
 **CLI always achieves perfect precision (1.000)** — because it generates directly from contract field properties, it never produces checks that contradict the contract. However, recall is consistently low (0.154–0.268). The CLI only covers structural field attributes; it cannot express quality rules described in free text, SQL, or custom expressions, nor freshness SLAs.
 
-**LLM augmentation improves F1 substantially on raddb (+0.603) and billing (+0.220)**, recovering the semantic rules the CLI cannot generate. On raddb the LLM adds 8 correct checks with 0 hallucinations, reaching F1=0.870. On billing it adds 12 correct checks with 1 hallucination.
-
-**bsadb LLM performance is poor (F1=0.486, 5 FP).** The hallucinations are not invented rules but check_id formatting errors: the LLM used dot-qualified field names (`tickets.ticket_status_id` instead of `ticket_status_id`) and the label `reference` instead of `domain` as the check type. The evaluator cannot match these to the expected set, so they register as FP. This is a prompt/convention consistency issue, not a semantic reasoning failure.
+**LLM augmentation improves F1 substantially across all datasets** — +0.603 on raddb, +0.220 on billing, +0.289 on bsadb — recovering the semantic rules the CLI cannot generate. Precision stays near-perfect (0.929–1.000) with at most 1 hallucination per dataset.
 
 **Remaining FN across all datasets** are primarily: `required` fields that the CLI maps to type checks instead of null checks (a CLI limitation), referential integrity rules that have no native GX expectation type, and the billing freshness SLA which has no `timestampField` in the contract.
