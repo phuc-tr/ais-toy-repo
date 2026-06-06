@@ -1,7 +1,7 @@
 {
   "expectations": [
     {
-      "id": "cf43ffeb-260e-4f32-98ad-31b781dd23e4",
+      "id": "5718fdcb-50cf-48ae-9584-b7b30b1993b3",
       "kwargs": {
         "column_list": [
           "radacctid",
@@ -36,7 +36,7 @@
       "type": "expect_table_columns_to_match_ordered_list"
     },
     {
-      "id": "7a4ff93b-531c-496d-94a0-cbc7e47d4374",
+      "id": "b20c3bbf-4e36-4bc6-a77a-8cdde30cb95d",
       "kwargs": {
         "column": "radacctid",
         "type_": "int32"
@@ -46,7 +46,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "b37678d7-c8b2-4f43-8694-cbd75963a55f",
+      "id": "e7176c8b-05e5-4765-88b5-6da7f73e1693",
       "kwargs": {
         "column": "radacctid"
       },
@@ -55,7 +55,7 @@
       "type": "expect_column_values_to_be_unique"
     },
     {
-      "id": "a845df38-59e2-4917-9b9f-4defa47c70c5",
+      "id": "dc3f276b-778f-42c8-aef3-8a212d04d53d",
       "kwargs": {
         "column": "acctsessionid",
         "type_": "str"
@@ -65,7 +65,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "a20de486-0793-4a9a-a1f3-823fec861d7b",
+      "id": "470425b8-0396-4dfc-b9d5-62814398dd6b",
       "kwargs": {
         "column": "acctuniqueid",
         "type_": "str"
@@ -75,7 +75,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "7f79b3e6-670b-4940-a130-2f6434b1bf20",
+      "id": "74549bc6-7a42-4752-a8cf-acdce97be6e1",
       "kwargs": {
         "column": "acctuniqueid"
       },
@@ -84,7 +84,7 @@
       "type": "expect_column_values_to_be_unique"
     },
     {
-      "id": "81b37dbf-cf4d-480a-aa7b-eff949a51bfa",
+      "id": "244efb5b-adfe-4b96-b1b4-0ce52349ead9",
       "kwargs": {
         "column": "realm",
         "type_": "str"
@@ -94,7 +94,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "3130d94a-70fb-4865-8b7f-e15b71055813",
+      "id": "8c99767c-090b-4f81-8b6d-edfbf61ce546",
       "kwargs": {
         "column": "nasportid",
         "type_": "str"
@@ -104,7 +104,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "b04c88b8-f917-460f-aa4f-bc8682d4f255",
+      "id": "0f1562de-d36b-4d86-a7aa-6ded063f8ac2",
       "kwargs": {
         "column": "nasporttype",
         "type_": "str"
@@ -114,7 +114,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "2f564dee-732a-44bd-a593-2343bd4e8b31",
+      "id": "cac9be8b-e328-45ff-99de-ea112b866bdd",
       "kwargs": {
         "column": "acctstarttime",
         "type_": "datetime64[ns]"
@@ -124,7 +124,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "65c55fc2-73c4-4021-b9d5-cb8e9e74046b",
+      "id": "c563bd4d-bbfb-4cf3-87f7-79a1f0fd0027",
       "kwargs": {
         "column": "acctupdatetime",
         "type_": "datetime64[ns]"
@@ -134,7 +134,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "5921b3ed-1d6b-46e0-bea4-3a1febe48488",
+      "id": "1bef0fbb-9218-4da2-90ee-61d5c6375d47",
       "kwargs": {
         "column": "acctstoptime",
         "type_": "datetime64[ns]"
@@ -144,7 +144,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "0176d423-53b4-4403-84f9-6d78d8d3a1ec",
+      "id": "f06bdaf8-9658-414b-9e74-5c5c7e3ec1d6",
       "kwargs": {
         "column": "acctinterval",
         "type_": "int32"
@@ -154,7 +154,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "140f9c5e-32f3-4c12-8f79-1431c1159eee",
+      "id": "038b81c8-b751-4094-a7a6-71f41f86ae84",
       "kwargs": {
         "column": "acctsessiontime",
         "type_": "int32"
@@ -164,7 +164,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "9def7104-84a3-4853-9ad6-9cfb4ffc2ab3",
+      "id": "bb00eae1-2cd9-42d9-a241-e31a7ce78036",
       "kwargs": {
         "column": "acctauthentic",
         "type_": "str"
@@ -174,7 +174,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "a258802c-0a04-4fe9-92a9-7cc9673002af",
+      "id": "1e7f882b-8244-4f83-b5aa-57c92c71d9fe",
       "kwargs": {
         "column": "connectinfo_start",
         "type_": "str"
@@ -184,7 +184,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "0de0dfaa-d0c7-4e88-aa81-5632585515f0",
+      "id": "dfc0208d-089d-4ea5-93b0-0933f78f3c42",
       "kwargs": {
         "column": "connectinfo_stop",
         "type_": "str"
@@ -194,7 +194,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "36ba9320-c96d-471b-929a-1f8e497b0f41",
+      "id": "dd5873f8-d78f-4dc2-9d68-ff6f7deacaa9",
       "kwargs": {
         "column": "acctinputoctets",
         "type_": "int32"
@@ -204,7 +204,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "2626e475-3125-456f-804e-18051ebb06b7",
+      "id": "8c3a735a-ed93-4899-9239-1ea6702effbe",
       "kwargs": {
         "column": "acctoutputoctets",
         "type_": "int32"
@@ -214,7 +214,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "398db27f-051c-455d-a060-713b72c349ac",
+      "id": "09b0e1ee-b828-4373-a0df-dcf97f74d1c7",
       "kwargs": {
         "column": "calledstationid",
         "type_": "str"
@@ -224,7 +224,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "e9965cb1-59c0-4848-a8af-5101842a0388",
+      "id": "e157d3fe-fdc0-4b47-b248-e417735d091f",
       "kwargs": {
         "column": "callingstationid",
         "type_": "str"
@@ -234,7 +234,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "e3f85b59-c906-447e-8cb2-cdfea234df37",
+      "id": "774a653e-630e-44a1-be97-dd6fd3f10ac4",
       "kwargs": {
         "column": "acctterminatecause",
         "type_": "str"
@@ -244,7 +244,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "10d4c0ac-711c-4fb3-8688-4cc63368cd57",
+      "id": "69c2fd9c-b533-426d-9208-5f3439ec2fdc",
       "kwargs": {
         "column": "servicetype",
         "type_": "str"
@@ -254,7 +254,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "d246c758-a7fc-47a5-9297-40bc647304f2",
+      "id": "a0df515c-9d99-45f2-8fdd-1f02fddd921b",
       "kwargs": {
         "column": "framedprotocol",
         "type_": "str"
@@ -264,7 +264,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "b61ecee4-7f55-4ad1-9c32-82e049610a88",
+      "id": "bb3d24e7-d44f-4a03-83d9-0a6da0a386c5",
       "kwargs": {
         "column": "framedipv6address",
         "type_": "str"
@@ -274,7 +274,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "b9f06340-d478-45d4-bfd1-3dd26ed4eb8e",
+      "id": "d1855c89-abb9-4755-a13b-aa65a77b34e2",
       "kwargs": {
         "column": "framedipv6prefix",
         "type_": "str"
@@ -284,7 +284,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "12d9962d-1a7e-41a7-97f8-c839b8ad253b",
+      "id": "65d26250-11cc-4fc6-a606-2671d63b86c3",
       "kwargs": {
         "column": "framedinterfaceid",
         "type_": "str"
@@ -294,7 +294,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "38c6b679-4cdd-4aa3-8229-8e9d8cffff28",
+      "id": "29b9be2b-3d7c-4dfa-a347-782fc2ba46d0",
       "kwargs": {
         "column": "delegatedipv6prefix",
         "type_": "str"
@@ -304,7 +304,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "e8e3d344-4a63-4e38-a90a-eafa6fcdcff5",
+      "id": "de19a847-6ae3-4763-b8dc-1b3ad196abd7",
       "kwargs": {
         "column": "radacctid"
       },
@@ -315,7 +315,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "a642bdfc-9e1f-4d98-983b-36d2769d0935",
+      "id": "7dcfcb24-129a-4435-a444-53cd6cc595a4",
       "kwargs": {
         "column": "acctsessionid"
       },
@@ -326,7 +326,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "c63f1470-15c8-4651-a1b7-7a20233945a7",
+      "id": "d2913915-6a97-43cb-888b-76480d34e9aa",
       "kwargs": {
         "column": "acctuniqueid"
       },
@@ -337,7 +337,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "f64fbc71-cc25-452b-a403-7a362fae3bce",
+      "id": "a3a5d22d-9bd6-4df2-ae64-07185a71214d",
       "kwargs": {
         "column": "nasportid",
         "regex": "^Uniq-Sess-ID\\d+$"
@@ -349,7 +349,7 @@
       "type": "expect_column_values_to_match_regex"
     },
     {
-      "id": "8598c1b8-17d0-4514-a26e-4c8e8b104b41",
+      "id": "737d90df-ce62-499d-8bb7-1b4ec1d48594",
       "kwargs": {
         "column": "nasporttype",
         "value_set": [
@@ -364,7 +364,7 @@
       "type": "expect_column_values_to_be_in_set"
     },
     {
-      "id": "6b1f2a84-763b-46ff-8a66-cb5dc80e5a28",
+      "id": "5c5aed18-3a49-4f99-ae5b-8f95ed534b2a",
       "kwargs": {
         "column_A": "acctstoptime",
         "column_B": "acctstarttime",
@@ -377,7 +377,7 @@
       "type": "expect_column_pair_values_a_to_be_greater_than_b"
     },
     {
-      "id": "5971ca5c-fabd-4054-8f5f-eddecfffdff2",
+      "id": "74180a3c-5b1c-43fe-88d7-99cf2fbf275d",
       "kwargs": {
         "column": "acctsessiontime",
         "quantile_ranges": {
@@ -399,7 +399,7 @@
       "type": "expect_column_quantile_values_to_be_between"
     },
     {
-      "id": "9ad944b2-ce03-4e71-b7e5-bad0f168fa1c",
+      "id": "e4c3b4a5-4dc2-4cb6-9cf8-c69913bab66b",
       "kwargs": {
         "column": "calledstationid",
         "mostly": 0.9
@@ -411,7 +411,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "d85b6538-1884-4e2d-9d06-6b989e86c987",
+      "id": "bf99a7f1-da61-43a7-806e-0e4986844a4c",
       "kwargs": {
         "column": "callingstationid",
         "mostly": 0.9
@@ -423,7 +423,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "fc9dd95c-f016-47a1-8098-a6ff0c262d84",
+      "id": "701d4b15-ad44-4366-aadc-91069ba86804",
       "kwargs": {
         "column": "acctterminatecause",
         "value_set": [
@@ -442,11 +442,11 @@
       "type": "expect_column_values_to_be_in_set"
     },
     {
-      "id": "ca1e8795-e43b-4749-b33f-0df1374ca3f6",
+      "id": "12b0e112-d255-439a-8bdd-942450508344",
       "kwargs": {
         "column": "acctstarttime",
-        "max_value": "2026-05-25T12:51:09.869456",
-        "min_value": "2026-05-24T11:51:09.869381"
+        "max_value": "2026-06-06T06:35:05.712411",
+        "min_value": "2026-06-05T05:35:05.712281"
       },
       "meta": {
         "check_id": "radacct:freshness:acctstarttime"
@@ -455,9 +455,9 @@
       "type": "expect_column_values_to_be_between"
     }
   ],
-  "id": "7940c0ef-5749-4add-a176-d9cde04da992",
+  "id": "fe8ca496-ebd6-440a-a321-2735497d36c4",
   "meta": {
-    "great_expectations_version": "1.17.1"
+    "great_expectations_version": "1.15.1"
   },
   "name": "expectation_suite",
   "notes": null
