@@ -132,17 +132,28 @@ def extract_cli(suite_path: str) -> set[tuple[str, str]]:
 
 
 def _parse_check_id(check_id: str) -> tuple[str, str] | None:
-    """Parse 'model:check_type:field' → (field, check_type), with fallbacks."""
+    """Parse 'model:check_type:field' → (field, check_type), with fallbacks.
+
+    Handles two LLM quirks:
+    - Table-prefixed field names (e.g. 'tickets.ticket_status_id' → 'ticket_status_id')
+    - 'reference' label used for referential domain checks (mapped to 'domain')
+    """
     parts = check_id.split(":")
     if len(parts) < 2:
         return None
     if len(parts) >= 3:
+        # Strip table prefix from field segment (e.g. "table.field" → "field")
+        field = parts[2].split(".")[-1]
         if parts[1] in CANONICAL_TYPES:
-            return (parts[2], parts[1])
+            return (field, parts[1])
         if parts[2] in CANONICAL_TYPES:
-            return (parts[1], parts[2])
-        return (parts[2], _infer_type(parts[1]))
-    return (parts[1], "unknown")
+            return (parts[1].split(".")[-1], parts[2])
+        check_type = _infer_type(parts[1])
+        # LLM uses "reference" for referential value checks, which are domain checks
+        if parts[1].lower() == "reference":
+            check_type = "domain"
+        return (field, check_type)
+    return (parts[1].split(".")[-1], "unknown")
 
 
 def extract_llm(suite_path: str) -> set[tuple[str, str]]:
