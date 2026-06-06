@@ -50,7 +50,7 @@ models:
         references: ticket_status.ticket_status_id
         quality:
           - type: text
-            description: ticket_status_id must exist in ticket_status.
+            description: ticket_status_id must be a valid value from ticket_status.
 
       ticket_type_id:
         type: integer
@@ -61,7 +61,7 @@ models:
         references: ticket_type.ticket_type_id
         quality:
           - type: text
-            description: ticket_type_id must exist in ticket_type.
+            description: ticket_type_id must be a valid value from ticket_type.
 
       ticket_description:
         type: string
@@ -79,7 +79,7 @@ models:
         references: ticket_priority.ticket_priority_id
         quality:
           - type: text
-            description: ticket_priority_id must exist in ticket_priority.
+            description: ticket_priority_id must be a valid value from ticket_priority.
 
       ticket_owner_id:
         type: integer
@@ -366,7 +366,7 @@ models:
         references: ticket_note_type.note_type
         quality:
           - type: text
-            description: note_type must exist in ticket_note_type.
+            description: note_type must be a valid value from ticket_note_type.
 
   ticket_note_type:
     description: Lookup table for note type classifications.

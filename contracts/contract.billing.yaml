@@ -358,6 +358,7 @@ models:
 
     quality:
       - rule: "custom"
+        field: total
         description: "total must equal amount + tax_amount - discount (tolerance ±0.01)"
         expression: "ABS(total - (amount + tax_amount - discount)) < 0.01"
 
@@ -575,6 +576,7 @@ models:
         values: [1, 2, 3, 4, 5]
         description: "Transaction type must be a recognised code"
       - rule: "custom"
+        field: due_date
         description: "due_date must be on or after creationdate"
         expression: "due_date >= DATE(creationdate)"
 
@@ -646,6 +648,7 @@ models:
         values: ["Active", "InActive"]
         description: "Campaign status must be Active or InActive"
       - rule: "custom"
+        field: cend
         description: "cend must be on or after cstart when both are populated"
         expression: "cend IS NULL OR cstart IS NULL OR cend >= cstart"
 
